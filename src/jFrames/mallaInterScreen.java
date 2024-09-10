@@ -4,24 +4,16 @@
  */
 package jFrames;
 
-import java.awt.Color;
-
 /**
  *
  * @author isaac
  */
-public class verMallaScreen extends javax.swing.JFrame {
+public class mallaInterScreen extends javax.swing.JFrame {
 
-    
-    Color COLORASIGACTUAL = new Color(4,79,178);
-    Color COLORASIGREQUI = new Color(239,192,61);
-    Color COLORASIGDISPO = new Color(178,2,90);
-    Color COLORASIGDEFAULT = new Color(117,117,117);
-    
     /**
      * Creates new form verMallaScreen
      */
-    public verMallaScreen() {
+    public mallaInterScreen() {
         initComponents();
     }
 
@@ -89,7 +81,7 @@ public class verMallaScreen extends javax.swing.JFrame {
         jLabel31 = new javax.swing.JLabel();
         ingesis = new javax.swing.JPanel();
         jLabel41 = new javax.swing.JLabel();
-        evaluacion = new javax.swing.JPanel();
+        evalucion = new javax.swing.JPanel();
         jLabel51 = new javax.swing.JLabel();
         sistemasOper = new javax.swing.JPanel();
         jLabel52 = new javax.swing.JLabel();
@@ -303,18 +295,10 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
         );
 
-        cal1.setBackground(new java.awt.Color(117, 117, 117));
         cal1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        cal1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                cal1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                cal1MouseExited(evt);
-            }
-        });
 
         jLabel19.setText("<html><center>Cálculo I para Ingeniería");
+        jLabel19.setToolTipText("");
 
         javax.swing.GroupLayout cal1Layout = new javax.swing.GroupLayout(cal1);
         cal1.setLayout(cal1Layout);
@@ -327,16 +311,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        alg1.setBackground(new java.awt.Color(117, 117, 117));
         alg1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        alg1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                alg1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                alg1MouseExited(evt);
-            }
-        });
 
         jLabel20.setText("<html><center>Álgebra I para Ingeniería");
 
@@ -351,16 +326,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        fis1.setBackground(new java.awt.Color(117, 117, 117));
         fis1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        fis1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                fis1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                fis1MouseExited(evt);
-            }
-        });
 
         jLabel21.setText("<html><center>Física I para Ingeniería");
 
@@ -375,16 +341,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        tallDesPer.setBackground(new java.awt.Color(117, 117, 117));
         tallDesPer.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        tallDesPer.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                tallDesPerMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                tallDesPerMouseExited(evt);
-            }
-        });
 
         jLabel22.setText("<html><center>Taller de desarrollo personal e integral");
 
@@ -399,16 +356,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        introIng.setBackground(new java.awt.Color(117, 117, 117));
         introIng.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        introIng.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                introIngMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                introIngMouseExited(evt);
-            }
-        });
 
         jLabel23.setText("<html><center>Introducción a la ingeniería");
 
@@ -423,16 +371,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        metEstud.setBackground(new java.awt.Color(117, 117, 117));
         metEstud.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        metEstud.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                metEstudMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                metEstudMouseExited(evt);
-            }
-        });
 
         jLabel24.setText("<html><center>Métodos de Estudio");
 
@@ -447,16 +386,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        cal2.setBackground(new java.awt.Color(117, 117, 117));
         cal2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        cal2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                cal2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                cal2MouseExited(evt);
-            }
-        });
 
         jLabel25.setText("<html><center>Cálculo II para Ingeniería");
 
@@ -471,16 +401,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        introIngInfor.setBackground(new java.awt.Color(117, 117, 117));
         introIngInfor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        introIngInfor.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                introIngInforMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                introIngInforMouseExited(evt);
-            }
-        });
 
         jLabel30.setText("<html><center>Introducción a la Ingeniería Informática");
 
@@ -495,16 +416,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        estadis.setBackground(new java.awt.Color(117, 117, 117));
         estadis.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        estadis.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                estadisMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                estadisMouseExited(evt);
-            }
-        });
 
         jLabel36.setText("<html><center>Análisis estadístico para Ingenería");
 
@@ -519,14 +431,10 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        alg2.setBackground(new java.awt.Color(117, 117, 117));
         alg2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         alg2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 alg2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                alg2MouseExited(evt);
             }
         });
 
@@ -543,16 +451,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        fis2.setBackground(new java.awt.Color(117, 117, 117));
         fis2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        fis2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                fis2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                fis2MouseExited(evt);
-            }
-        });
 
         jLabel27.setText("<html><center>Física II para Ingeniería");
 
@@ -567,16 +466,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        fundaProgra.setBackground(new java.awt.Color(117, 117, 117));
         fundaProgra.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        fundaProgra.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                fundaPrograMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                fundaPrograMouseExited(evt);
-            }
-        });
 
         jLabel28.setText("<html><center>Fundamentos de computación y programación");
 
@@ -591,16 +481,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        quimica.setBackground(new java.awt.Color(117, 117, 117));
         quimica.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        quimica.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                quimicaMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                quimicaMouseExited(evt);
-            }
-        });
 
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel29.setText("<html><center>Química general");
@@ -616,16 +497,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        metodos.setBackground(new java.awt.Color(117, 117, 117));
         metodos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        metodos.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                metodosMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                metodosMouseExited(evt);
-            }
-        });
 
         jLabel35.setText("<html><center>Métodos de programación");
 
@@ -640,16 +512,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        edo.setBackground(new java.awt.Color(117, 117, 117));
         edo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        edo.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                edoMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                edoMouseExited(evt);
-            }
-        });
 
         jLabel34.setText("<html><center>Ecuaciones diferenciales y métodos numéricos para Ingeniería");
 
@@ -664,16 +527,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        ingles1.setBackground(new java.awt.Color(117, 117, 117));
         ingles1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        ingles1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ingles1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                ingles1MouseExited(evt);
-            }
-        });
 
         jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel33.setText("Inglés I");
@@ -689,16 +543,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        electro.setBackground(new java.awt.Color(117, 117, 117));
         electro.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        electro.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                electroMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                electroMouseExited(evt);
-            }
-        });
 
         jLabel32.setText("<html><center>Electricidad y magnetismo para Ingeniería");
 
@@ -713,16 +558,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        comunicacionEfc.setBackground(new java.awt.Color(117, 117, 117));
         comunicacionEfc.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        comunicacionEfc.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                comunicacionEfcMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                comunicacionEfcMouseExited(evt);
-            }
-        });
 
         jLabel31.setText("<html><center>Comunicación Efectiva");
 
@@ -737,16 +573,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        ingesis.setBackground(new java.awt.Color(117, 117, 117));
         ingesis.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        ingesis.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ingesisMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                ingesisMouseExited(evt);
-            }
-        });
 
         jLabel41.setText("<html><center>Ingeniería de sistemas");
 
@@ -761,40 +588,22 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        evaluacion.setBackground(new java.awt.Color(117, 117, 117));
-        evaluacion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        evaluacion.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                evaluacionMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                evaluacionMouseExited(evt);
-            }
-        });
+        evalucion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel51.setText("<html><center>Evaluación de proyectos informáticos");
 
-        javax.swing.GroupLayout evaluacionLayout = new javax.swing.GroupLayout(evaluacion);
-        evaluacion.setLayout(evaluacionLayout);
-        evaluacionLayout.setHorizontalGroup(
-            evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout evalucionLayout = new javax.swing.GroupLayout(evalucion);
+        evalucion.setLayout(evalucionLayout);
+        evalucionLayout.setHorizontalGroup(
+            evalucionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
-        evaluacionLayout.setVerticalGroup(
-            evaluacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        evalucionLayout.setVerticalGroup(
+            evalucionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        sistemasOper.setBackground(new java.awt.Color(117, 117, 117));
         sistemasOper.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        sistemasOper.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                sistemasOperMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                sistemasOperMouseExited(evt);
-            }
-        });
 
         jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel52.setText("<html><center>Sistemas operativos");
@@ -810,16 +619,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        proyec.setBackground(new java.awt.Color(117, 117, 117));
         proyec.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        proyec.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                proyecMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                proyecMouseExited(evt);
-            }
-        });
 
         jLabel57.setText("<html><center>Proyecto de ingeniería de software");
 
@@ -834,16 +634,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        titu.setBackground(new java.awt.Color(117, 117, 117));
         titu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        titu.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                tituMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                tituMouseExited(evt);
-            }
-        });
 
         jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel56.setText("<html><center>Trabajo de Titulación");
@@ -859,16 +650,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        top1.setBackground(new java.awt.Color(117, 117, 117));
         top1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        top1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                top1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                top1MouseExited(evt);
-            }
-        });
 
         jLabel59.setText("<html><center>Tópicos de especialidad I");
 
@@ -883,16 +665,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        top2.setBackground(new java.awt.Color(117, 117, 117));
         top2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        top2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                top2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                top2MouseExited(evt);
-            }
-        });
 
         jLabel60.setText("<html><center>Tópicos de especialidad II");
 
@@ -907,16 +680,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        edecu.setBackground(new java.awt.Color(117, 117, 117));
         edecu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        edecu.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                edecuMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                edecuMouseExited(evt);
-            }
-        });
 
         jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel43.setText("<html><center>Estructura de computadores</center></html>");
@@ -932,16 +696,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        fundeco.setBackground(new java.awt.Color(117, 117, 117));
         fundeco.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        fundeco.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                fundecoMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                fundecoMouseExited(evt);
-            }
-        });
 
         jLabel42.setText("<html><center>Fundamentos de economía");
 
@@ -956,16 +711,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        basedatos.setBackground(new java.awt.Color(117, 117, 117));
         basedatos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        basedatos.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                basedatosMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                basedatosMouseExited(evt);
-            }
-        });
 
         jLabel50.setText("<html><center>Diseño de bases de datos");
 
@@ -980,16 +726,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        tallerbase.setBackground(new java.awt.Color(117, 117, 117));
         tallerbase.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        tallerbase.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                tallerbaseMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                tallerbaseMouseExited(evt);
-            }
-        });
 
         jLabel53.setText("<html><center>Taller de bases de datos");
 
@@ -1004,16 +741,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        orga.setBackground(new java.awt.Color(117, 117, 117));
         orga.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        orga.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                orgaMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                orgaMouseExited(evt);
-            }
-        });
 
         jLabel49.setText("<html><center>Organización de computadores");
 
@@ -1028,16 +756,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel49, javax.swing.GroupLayout.DEFAULT_SIZE, 63, Short.MAX_VALUE)
         );
 
-        adminProyec.setBackground(new java.awt.Color(117, 117, 117));
         adminProyec.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        adminProyec.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                adminProyecMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                adminProyecMouseExited(evt);
-            }
-        });
 
         jLabel54.setText("<html><center>Administración de proyectos informáticos");
 
@@ -1052,16 +771,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        paradigmas.setBackground(new java.awt.Color(117, 117, 117));
         paradigmas.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        paradigmas.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                paradigmasMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                paradigmasMouseExited(evt);
-            }
-        });
 
         jLabel44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel44.setText("<html><center>Paradigmas de programación");
@@ -1077,16 +787,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        fundaIngSoft.setBackground(new java.awt.Color(117, 117, 117));
         fundaIngSoft.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        fundaIngSoft.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                fundaIngSoftMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                fundaIngSoftMouseExited(evt);
-            }
-        });
 
         jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel48.setText("<html><center>Fundamentos de ingeniería de software");
@@ -1102,16 +803,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        tecnias.setBackground(new java.awt.Color(117, 117, 117));
         tecnias.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        tecnias.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                tecniasMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                tecniasMouseExited(evt);
-            }
-        });
 
         jLabel55.setText("<html><center>Técnicas de ingeniería de software");
 
@@ -1126,16 +818,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel55, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        top3.setBackground(new java.awt.Color(117, 117, 117));
         top3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        top3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                top3MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                top3MouseExited(evt);
-            }
-        });
 
         jLabel61.setText("<html><center>Tópicos de especialidad III");
 
@@ -1150,16 +833,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        eda.setBackground(new java.awt.Color(117, 117, 117));
         eda.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        eda.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                edaMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                edaMouseExited(evt);
-            }
-        });
 
         jLabel45.setText("<html><center>Análisis de algoritmos y estructura de datos");
 
@@ -1174,16 +848,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        inso.setBackground(new java.awt.Color(117, 117, 117));
         inso.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        inso.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                insoMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                insoMouseExited(evt);
-            }
-        });
 
         jLabel47.setText("<html><center>Informática y sociedad");
 
@@ -1202,16 +867,7 @@ public class verMallaScreen extends javax.swing.JFrame {
                 .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        redes.setBackground(new java.awt.Color(117, 117, 117));
         redes.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        redes.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                redesMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                redesMouseExited(evt);
-            }
-        });
 
         jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel39.setText("<html><center>Redes computacionales");
@@ -1227,18 +883,11 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        semina.setBackground(new java.awt.Color(117, 117, 117));
         semina.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        semina.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                seminaMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                seminaMouseExited(evt);
-            }
-        });
 
+        jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel58.setText("<html><center>Seminario de computación e informática");
+        jLabel58.setToolTipText("");
 
         javax.swing.GroupLayout seminaLayout = new javax.swing.GroupLayout(semina);
         semina.setLayout(seminaLayout);
@@ -1251,16 +900,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        ingles2.setBackground(new java.awt.Color(117, 117, 117));
         ingles2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        ingles2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ingles2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                ingles2MouseExited(evt);
-            }
-        });
 
         jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel40.setText("Inglés II");
@@ -1276,16 +916,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel40, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        sia.setBackground(new java.awt.Color(117, 117, 117));
         sia.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        sia.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                siaMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                siaMouseExited(evt);
-            }
-        });
 
         jLabel46.setText("<html><center>Sistemas de información");
 
@@ -1300,16 +931,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        ingles3.setBackground(new java.awt.Color(117, 117, 117));
         ingles3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        ingles3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ingles3MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                ingles3MouseExited(evt);
-            }
-        });
 
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel37.setText("Inglés III");
@@ -1325,16 +947,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        ingles4.setBackground(new java.awt.Color(117, 117, 117));
         ingles4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        ingles4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ingles4MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                ingles4MouseExited(evt);
-            }
-        });
 
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel38.setText("Inglés IV");
@@ -1386,7 +999,7 @@ public class verMallaScreen extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(ingesis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(evaluacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(evalucion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(sistemasOper, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(mainPanelMallaLayout.createSequentialGroup()
@@ -1488,7 +1101,7 @@ public class verMallaScreen extends javax.swing.JFrame {
                     .addComponent(cal2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(electro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ingesis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(evaluacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(evalucion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(sistemasOper, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(proyec, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(titu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1573,7 +1186,7 @@ public class verMallaScreen extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(100, 100, 100)
                 .addComponent(mainPanelMalla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
@@ -1581,504 +1194,10 @@ public class verMallaScreen extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cal2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cal2MouseEntered
-        cal2.setBackground(COLORASIGACTUAL);
-        cal1.setBackground(COLORASIGREQUI);
-        electro.setBackground(COLORASIGDISPO);
-        edo.setBackground(COLORASIGDISPO);
-        estadis.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_cal2MouseEntered
-
-    private void alg1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alg1MouseEntered
-        alg1.setBackground(COLORASIGACTUAL);
-        alg2.setBackground(COLORASIGDISPO);
-        fundaProgra.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_alg1MouseEntered
-
-    private void fis1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fis1MouseEntered
-        fis1.setBackground(COLORASIGACTUAL);
-        fis2.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_fis1MouseEntered
-
-    private void tallDesPerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tallDesPerMouseEntered
-        tallDesPer.setBackground(COLORASIGACTUAL);
-        comunicacionEfc.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_tallDesPerMouseEntered
-
-    private void introIngMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_introIngMouseEntered
-        introIng.setBackground(COLORASIGACTUAL);
-        introIngInfor.setBackground(COLORASIGDISPO);
-        ingesis.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_introIngMouseEntered
-
-    private void metEstudMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metEstudMouseEntered
-        metEstud.setBackground(COLORASIGACTUAL);
-        ingles1.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_metEstudMouseEntered
-
     private void alg2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alg2MouseEntered
-        alg2.setBackground(COLORASIGACTUAL);
-        alg1.setBackground(COLORASIGREQUI);
-        edecu.setBackground(COLORASIGDISPO);
+        // TODO add your handling code here:
     }//GEN-LAST:event_alg2MouseEntered
 
-    private void fis2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fis2MouseEntered
-        fis2.setBackground(COLORASIGACTUAL);
-        fis1.setBackground(COLORASIGREQUI);
-        electro.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_fis2MouseEntered
-
-    private void fundaPrograMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundaPrograMouseEntered
-        fundaProgra.setBackground(COLORASIGACTUAL);
-        alg1.setBackground(COLORASIGREQUI);
-        edo.setBackground(COLORASIGDISPO);
-        metodos.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_fundaPrograMouseEntered
-
-    private void quimicaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quimicaMouseEntered
-        quimica.setBackground(COLORASIGACTUAL);
-        ingesis.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_quimicaMouseEntered
-
-    private void introIngInforMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_introIngInforMouseEntered
-        introIngInfor.setBackground(COLORASIGACTUAL);
-        introIng.setBackground(COLORASIGREQUI);
-        metodos.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_introIngInforMouseEntered
-
-    private void electroMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_electroMouseEntered
-        electro.setBackground(COLORASIGACTUAL);
-        cal2.setBackground(COLORASIGREQUI);
-        fis2.setBackground(COLORASIGREQUI);
-        edecu.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_electroMouseEntered
-
-    private void comunicacionEfcMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_comunicacionEfcMouseEntered
-        comunicacionEfc.setBackground(COLORASIGACTUAL);
-        tallDesPer.setBackground(COLORASIGREQUI);
-        inso.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_comunicacionEfcMouseEntered
-
-    private void ingles1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles1MouseEntered
-        ingles1.setBackground(COLORASIGACTUAL);
-        metEstud.setBackground(COLORASIGREQUI);
-        ingles2.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_ingles1MouseEntered
-
-    private void edoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edoMouseEntered
-        edo.setBackground(COLORASIGACTUAL);
-        cal2.setBackground(COLORASIGREQUI);
-        fundaProgra.setBackground(COLORASIGREQUI);
-        evaluacion.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_edoMouseEntered
-
-    private void metodosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metodosMouseEntered
-        metodos.setBackground(COLORASIGACTUAL);
-        fundaProgra.setBackground(COLORASIGREQUI);
-        introIngInfor.setBackground(COLORASIGREQUI);
-        paradigmas.setBackground(COLORASIGDISPO);
-        eda.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_metodosMouseEntered
-
-    private void estadisMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_estadisMouseEntered
-        estadis.setBackground(COLORASIGACTUAL);
-        cal2.setBackground(COLORASIGREQUI);
-        ingesis.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_estadisMouseEntered
-
-    private void ingesisMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingesisMouseEntered
-        ingesis.setBackground(COLORASIGACTUAL);
-        introIng.setBackground(COLORASIGREQUI);
-        quimica.setBackground(COLORASIGREQUI);
-        estadis.setBackground(COLORASIGREQUI);
-        sia.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_ingesisMouseEntered
-
-    private void fundecoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundecoMouseEntered
-        fundeco.setBackground(COLORASIGACTUAL);
-        cal1.setBackground(COLORASIGREQUI);
-        evaluacion.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_fundecoMouseEntered
-
-    private void edecuMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edecuMouseEntered
-        edecu.setBackground(COLORASIGACTUAL);
-        alg2.setBackground(COLORASIGREQUI);
-        electro.setBackground(COLORASIGREQUI);
-        orga.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_edecuMouseEntered
-
-    private void ingles2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles2MouseEntered
-        ingles2.setBackground(COLORASIGACTUAL);
-        ingles1.setBackground(COLORASIGREQUI);
-        ingles3.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_ingles2MouseEntered
-
-    private void evaluacionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_evaluacionMouseEntered
-        evaluacion.setBackground(COLORASIGACTUAL);
-        edo.setBackground(COLORASIGREQUI);
-        fundeco.setBackground(COLORASIGREQUI);
-        adminProyec.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_evaluacionMouseEntered
-
-    private void basedatosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_basedatosMouseEntered
-        basedatos.setBackground(COLORASIGACTUAL);
-        paradigmas.setBackground(COLORASIGREQUI);
-        tallerbase.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_basedatosMouseEntered
-
-    private void orgaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orgaMouseEntered
-        orga.setBackground(COLORASIGACTUAL);
-        edecu.setBackground(COLORASIGREQUI);
-        sistemasOper.setBackground(COLORASIGDISPO);
-        redes.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_orgaMouseEntered
-
-    private void fundaIngSoftMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundaIngSoftMouseEntered
-        fundaIngSoft.setBackground(COLORASIGACTUAL);
-        paradigmas.setBackground(COLORASIGREQUI);
-        tecnias.setBackground(COLORASIGDISPO);
-        tallerbase.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_fundaIngSoftMouseEntered
-
-    private void insoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_insoMouseEntered
-        inso.setBackground(COLORASIGACTUAL);
-        comunicacionEfc.setBackground(COLORASIGREQUI);
-        semina.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_insoMouseEntered
-
-    private void siaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siaMouseEntered
-        sia.setBackground(COLORASIGACTUAL);
-        ingesis.setBackground(COLORASIGREQUI);
-        semina.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_siaMouseEntered
-
-    private void ingles3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles3MouseEntered
-        ingles3.setBackground(COLORASIGACTUAL);
-        ingles2.setBackground(COLORASIGREQUI);
-        ingles4.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_ingles3MouseEntered
-
-    private void sistemasOperMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sistemasOperMouseEntered
-        sistemasOper.setBackground(COLORASIGACTUAL);
-        eda.setBackground(COLORASIGREQUI);
-        orga.setBackground(COLORASIGREQUI);
-        semina.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_sistemasOperMouseEntered
-
-    private void tallerbaseMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tallerbaseMouseEntered
-        tallerbase.setBackground(COLORASIGACTUAL);
-        basedatos.setBackground(COLORASIGREQUI);
-        fundaIngSoft.setBackground(COLORASIGREQUI);
-        semina.setBackground(COLORASIGDISPO);
-        proyec.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_tallerbaseMouseEntered
-
-    private void adminProyecMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adminProyecMouseEntered
-        adminProyec.setBackground(COLORASIGACTUAL);
-        evaluacion.setBackground(COLORASIGREQUI);
-        proyec.setBackground(COLORASIGDISPO);
-        top3.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_adminProyecMouseEntered
-
-    private void tecniasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tecniasMouseEntered
-        tecnias.setBackground(COLORASIGACTUAL);
-        fundaIngSoft.setBackground(COLORASIGREQUI);
-        proyec.setBackground(COLORASIGDISPO);
-        top1.setBackground(COLORASIGDISPO);
-        top2.setBackground(COLORASIGDISPO);
-        top3.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_tecniasMouseEntered
-
-    private void redesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_redesMouseEntered
-        redes.setBackground(COLORASIGACTUAL);
-        orga.setBackground(COLORASIGREQUI);
-        top1.setBackground(COLORASIGDISPO);
-        top2.setBackground(COLORASIGDISPO);
-        top3.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_redesMouseEntered
-
-    private void ingles4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles4MouseEntered
-        ingles4.setBackground(COLORASIGACTUAL);
-        ingles3.setBackground(COLORASIGREQUI);
-    }//GEN-LAST:event_ingles4MouseEntered
-
-    private void proyecMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_proyecMouseEntered
-        proyec.setBackground(COLORASIGACTUAL);
-        tallerbase.setBackground(COLORASIGREQUI);
-        tecnias.setBackground(COLORASIGREQUI);
-    }//GEN-LAST:event_proyecMouseEntered
-
-    private void top1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top1MouseEntered
-        top1.setBackground(COLORASIGACTUAL);
-        adminProyec.setBackground(COLORASIGREQUI);
-        tecnias.setBackground(COLORASIGREQUI);
-        redes.setBackground(COLORASIGREQUI);
-    }//GEN-LAST:event_top1MouseEntered
-
-    private void top2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top2MouseEntered
-        top2.setBackground(COLORASIGACTUAL);
-        adminProyec.setBackground(COLORASIGREQUI);
-        tecnias.setBackground(COLORASIGREQUI);
-        redes.setBackground(COLORASIGREQUI);
-    }//GEN-LAST:event_top2MouseEntered
-
-    private void top3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top3MouseEntered
-        top3.setBackground(COLORASIGACTUAL);
-        adminProyec.setBackground(COLORASIGREQUI);
-        tecnias.setBackground(COLORASIGREQUI);
-        redes.setBackground(COLORASIGREQUI);
-    }//GEN-LAST:event_top3MouseEntered
-
-    private void seminaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seminaMouseEntered
-        semina.setBackground(COLORASIGACTUAL);
-        inso.setBackground(COLORASIGREQUI);
-        sia.setBackground(COLORASIGREQUI);
-        sistemasOper.setBackground(COLORASIGREQUI);
-        tallerbase.setBackground(COLORASIGREQUI);
-    }//GEN-LAST:event_seminaMouseEntered
-
-    private void tituMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tituMouseEntered
-        titu.setBackground(COLORASIGACTUAL);
-        semina.setBackground(COLORASIGREQUI);
-    }//GEN-LAST:event_tituMouseEntered
-
-    private void fis2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fis2MouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_fis2MouseExited
-
-    private void alg1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alg1MouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_alg1MouseExited
-
-    private void tallDesPerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tallDesPerMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_tallDesPerMouseExited
-
-    private void introIngMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_introIngMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_introIngMouseExited
-
-    private void metEstudMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metEstudMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_metEstudMouseExited
-
-    private void introIngInforMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_introIngInforMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_introIngInforMouseExited
-
-    private void fundaPrograMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundaPrograMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_fundaPrograMouseExited
-
-    private void quimicaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quimicaMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_quimicaMouseExited
-
-    private void metodosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metodosMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_metodosMouseExited
-
-    private void edoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edoMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_edoMouseExited
-
-    private void estadisMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_estadisMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_estadisMouseExited
-
-    private void alg2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alg2MouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_alg2MouseExited
-
-    private void fis1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fis1MouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_fis1MouseExited
-
-    private void ingles1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles1MouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_ingles1MouseExited
-
-    private void electroMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_electroMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_electroMouseExited
-
-    private void comunicacionEfcMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_comunicacionEfcMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_comunicacionEfcMouseExited
-
-    private void ingesisMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingesisMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_ingesisMouseExited
-
-    private void evaluacionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_evaluacionMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_evaluacionMouseExited
-
-    private void sistemasOperMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sistemasOperMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_sistemasOperMouseExited
-
-    private void proyecMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_proyecMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_proyecMouseExited
-
-    private void tituMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tituMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_tituMouseExited
-
-    private void top1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top1MouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_top1MouseExited
-
-    private void top2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top2MouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_top2MouseExited
-
-    private void edecuMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edecuMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_edecuMouseExited
-
-    private void fundecoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundecoMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_fundecoMouseExited
-
-    private void basedatosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_basedatosMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_basedatosMouseExited
-
-    private void tallerbaseMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tallerbaseMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_tallerbaseMouseExited
-
-    private void orgaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orgaMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_orgaMouseExited
-
-    private void adminProyecMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adminProyecMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_adminProyecMouseExited
-
-    private void paradigmasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_paradigmasMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_paradigmasMouseExited
-
-    private void fundaIngSoftMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundaIngSoftMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_fundaIngSoftMouseExited
-
-    private void tecniasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tecniasMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_tecniasMouseExited
-
-    private void top3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top3MouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_top3MouseExited
-
-    private void edaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edaMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_edaMouseExited
-
-    private void insoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_insoMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_insoMouseExited
-
-    private void redesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_redesMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_redesMouseExited
-
-    private void seminaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seminaMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_seminaMouseExited
-
-    private void ingles2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles2MouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_ingles2MouseExited
-
-    private void siaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siaMouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_siaMouseExited
-
-    private void ingles3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles3MouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_ingles3MouseExited
-
-    private void ingles4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles4MouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_ingles4MouseExited
-
-    private void paradigmasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_paradigmasMouseEntered
-        paradigmas.setBackground(COLORASIGACTUAL);
-        metodos.setBackground(COLORASIGREQUI);
-        fundaIngSoft.setBackground(COLORASIGDISPO);
-        basedatos.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_paradigmasMouseEntered
-
-    private void edaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edaMouseEntered
-        eda.setBackground(COLORASIGACTUAL);
-        metodos.setBackground(COLORASIGREQUI);
-        sistemasOper.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_edaMouseEntered
-
-    private void cal1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cal1MouseEntered
-        cal1.setBackground(COLORASIGACTUAL);
-        cal2.setBackground(COLORASIGDISPO);
-        fundeco.setBackground(COLORASIGDISPO);
-    }//GEN-LAST:event_cal1MouseEntered
-
-    private void cal1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cal1MouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_cal1MouseExited
-
-    private void cal2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cal2MouseExited
-        setColoresDefaultEnMalla();
-    }//GEN-LAST:event_cal2MouseExited
-
-    private void setColoresDefaultEnMalla(){
-        cal1.setBackground(COLORASIGDEFAULT);
-        alg1.setBackground(COLORASIGDEFAULT);
-        fis1.setBackground(COLORASIGDEFAULT);
-        tallDesPer.setBackground(COLORASIGDEFAULT);
-        introIng.setBackground(COLORASIGDEFAULT);
-        metEstud.setBackground(COLORASIGDEFAULT);
-        cal2.setBackground(COLORASIGDEFAULT);
-        alg2.setBackground(COLORASIGDEFAULT);
-        fis2.setBackground(COLORASIGDEFAULT);
-        quimica.setBackground(COLORASIGDEFAULT);
-        fundaProgra.setBackground(COLORASIGDEFAULT);
-        introIngInfor.setBackground(COLORASIGDEFAULT);
-        electro.setBackground(COLORASIGDEFAULT);
-        ingles1.setBackground(COLORASIGDEFAULT);
-        ingles2.setBackground(COLORASIGDEFAULT);
-        ingles3.setBackground(COLORASIGDEFAULT);
-        ingles4.setBackground(COLORASIGDEFAULT);
-        comunicacionEfc.setBackground(COLORASIGDEFAULT);
-        edo.setBackground(COLORASIGDEFAULT);
-        metodos.setBackground(COLORASIGDEFAULT);
-        estadis.setBackground(COLORASIGDEFAULT);
-        ingesis.setBackground(COLORASIGDEFAULT);
-        edecu.setBackground(COLORASIGDEFAULT);
-        fundeco.setBackground(COLORASIGDEFAULT);
-        paradigmas.setBackground(COLORASIGDEFAULT);
-        eda.setBackground(COLORASIGDEFAULT);
-        inso.setBackground(COLORASIGDEFAULT);
-        sia.setBackground(COLORASIGDEFAULT);
-        orga.setBackground(COLORASIGDEFAULT);
-        fundaIngSoft.setBackground(COLORASIGDEFAULT);
-        evaluacion.setBackground(COLORASIGDEFAULT);
-        basedatos.setBackground(COLORASIGDEFAULT);
-        redes.setBackground(COLORASIGDEFAULT);
-        tecnias.setBackground(COLORASIGDEFAULT);
-        adminProyec.setBackground(COLORASIGDEFAULT);
-        tallerbase.setBackground(COLORASIGDEFAULT);
-        sistemasOper.setBackground(COLORASIGDEFAULT);
-        semina.setBackground(COLORASIGDEFAULT);
-        top1.setBackground(COLORASIGDEFAULT);
-        top2.setBackground(COLORASIGDEFAULT);
-        top3.setBackground(COLORASIGDEFAULT);
-        proyec.setBackground(COLORASIGDEFAULT);
-        titu.setBackground(COLORASIGDEFAULT);
-    }
-    
     /**
      * @param args the command line arguments
      */
@@ -2096,20 +1215,21 @@ public class verMallaScreen extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(verMallaScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(mallaInterScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(verMallaScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(mallaInterScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(verMallaScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(mallaInterScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(verMallaScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(mallaInterScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new verMallaScreen().setVisible(true);
+                new mallaInterScreen().setVisible(true);
             }
         });
     }
@@ -2127,7 +1247,7 @@ public class verMallaScreen extends javax.swing.JFrame {
     private javax.swing.JPanel edo;
     private javax.swing.JPanel electro;
     private javax.swing.JPanel estadis;
-    private javax.swing.JPanel evaluacion;
+    private javax.swing.JPanel evalucion;
     private javax.swing.JPanel fis1;
     private javax.swing.JPanel fis2;
     private javax.swing.JPanel fundaIngSoft;
