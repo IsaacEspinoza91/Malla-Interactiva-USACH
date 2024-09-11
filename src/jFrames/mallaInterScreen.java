@@ -4,19 +4,165 @@
  */
 package jFrames;
 
+import Asignatura.Asignatura;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author isaac
  */
 public class mallaInterScreen extends javax.swing.JFrame {
 
+    //Atributos
+    List<Asignatura> cursos = new ArrayList<>();
+    
     /**
      * Creates new form verMallaScreen
      */
     public mallaInterScreen() {
         initComponents();
+        
+        //Codigo imperativo para datos de las asignaturas
+        Asignatura calculo1 = new Asignatura("Calculo 1","D",cal1);
+        this.cursos.add(calculo1);
+        Asignatura algebra1 = new Asignatura("Algebra 1","D",alg1);
+        this.cursos.add(algebra1);
+        Asignatura fisica1 = new Asignatura("Fisica 1","D",fis1);
+        this.cursos.add(fisica1);
+        Asignatura tallerDesarrolloPersonal = new Asignatura("Taller desarrollo personal","D",tallDesPer);
+        this.cursos.add(tallerDesarrolloPersonal);
+        Asignatura metodosDeEstudio = new Asignatura("Metodos de estudio","D",metEstud);
+        this.cursos.add(metodosDeEstudio);
+        Asignatura introduccionALaIngenieria = new Asignatura("Introduccion a la ingenieria","D",introIng);
+        this.cursos.add(introduccionALaIngenieria);
+        Asignatura calculo2 = new Asignatura("Calculo 2","B",cal2);
+        calculo2.setRequisitos(List.of(calculo1));
+        this.cursos.add(calculo2);
+        Asignatura algebra2 = new Asignatura("Algebra 2","B",alg2);
+        algebra2.setRequisitos(List.of(algebra1));
+        this.cursos.add(algebra2);
+        Asignatura fisica2 = new Asignatura("Fisica 2","B",fis2);
+        fisica2.setRequisitos(List.of(fisica1));
+        this.cursos.add(fisica2);
+        Asignatura fundamentosDeProgramacion = new Asignatura("Fundamentos de programacion","B",fundaProgra);
+        fundamentosDeProgramacion.setRequisitos(List.of(algebra1));
+        this.cursos.add(fundamentosDeProgramacion);
+        Asignatura introduccionALaIngenieriaInformatica = new Asignatura("Introduccion ingenieria informatica","B",introIngInfor);
+        introduccionALaIngenieriaInformatica.setRequisitos(List.of(introduccionALaIngenieria));
+        this.cursos.add(introduccionALaIngenieriaInformatica);
+        Asignatura quimicaGeneral = new Asignatura("Quimica","D",quimica);
+        this.cursos.add(quimicaGeneral);
+        Asignatura electricidadYMagnetismo = new Asignatura("Electro","B",electro);
+        electricidadYMagnetismo.setRequisitos(List.of(calculo2,fisica2));
+        this.cursos.add(electricidadYMagnetismo);
+        Asignatura comunicacionEfectiva = new Asignatura("Comunicacion efectiva","B",comunicacionEfc);
+        comunicacionEfectiva.setRequisitos(List.of(tallerDesarrolloPersonal));
+        this.cursos.add(comunicacionEfectiva);
+        Asignatura inglesI = new Asignatura("ingles1","B",ingles1);
+        inglesI.setRequisitos(List.of(metodosDeEstudio));
+        this.cursos.add(inglesI);
+        Asignatura ecuacionesDiferenciales = new Asignatura("Ecuaciones diferenciales","B",edo);
+        ecuacionesDiferenciales.setRequisitos(List.of(calculo2,fundamentosDeProgramacion));
+        this.cursos.add(ecuacionesDiferenciales);
+        Asignatura metodosDeProgramacion = new Asignatura("Metodos de programacion","B",metodos);
+        metodosDeProgramacion.setRequisitos(List.of(fundamentosDeProgramacion,introduccionALaIngenieriaInformatica));
+        this.cursos.add(metodosDeProgramacion);
+        Asignatura analisisEstadistico = new Asignatura("Analisis estadistico","B",estadis);
+        analisisEstadistico.setRequisitos(List.of(calculo2));
+        this.cursos.add(analisisEstadistico);
+        Asignatura inglesII = new Asignatura("Ingles 2","B",ingles2);
+        inglesII.setRequisitos(List.of(inglesI));
+        this.cursos.add(inglesII);
+        Asignatura ingenieriaDeSistemas = new Asignatura("Ingenieria de sistemas","B",ingesis);
+        ingenieriaDeSistemas.setRequisitos(List.of(introduccionALaIngenieria,quimicaGeneral,analisisEstadistico));
+        this.cursos.add(ingenieriaDeSistemas);
+        Asignatura estructuraDeComputadores = new Asignatura("Estructura de computadores","B",edecu);
+        estructuraDeComputadores.setRequisitos(List.of(algebra2,electricidadYMagnetismo));
+        this.cursos.add(estructuraDeComputadores);
+        Asignatura fundamentosDeEconomia = new Asignatura("Fundamentos de economia","B",fundeco);
+        fundamentosDeEconomia.setRequisitos(List.of(calculo1));
+        this.cursos.add(fundamentosDeEconomia);
+        Asignatura paradigmasDeProgramacion = new Asignatura("Paradigmas de programacion","B",paradigmas);
+        paradigmasDeProgramacion.setRequisitos(List.of(metodosDeProgramacion));
+        this.cursos.add(paradigmasDeProgramacion);
+        Asignatura analisisDeAlgoritmos = new Asignatura("Analisis de algoritmos y estructura de datos","B",eda);
+        analisisDeAlgoritmos.setRequisitos(List.of(metodosDeProgramacion));
+        this.cursos.add(analisisDeAlgoritmos);
+        Asignatura evaluacionProyectosInformaticos = new Asignatura("Evaluacion de proyectos informaticos","B",evalucion);
+        evaluacionProyectosInformaticos.setRequisitos(List.of(ecuacionesDiferenciales,fundamentosDeEconomia));
+        this.cursos.add(evaluacionProyectosInformaticos);
+        Asignatura inglesIII = new Asignatura("Ingles 3","B",ingles3);
+        inglesIII.setRequisitos(List.of(inglesII));
+        this.cursos.add(inglesIII);
+        inglesIII.setRequisitos(List.of(inglesII));
+        Asignatura sistemasDeInformacion = new Asignatura("Sistemas de informacion","B",sia);
+        sistemasDeInformacion.setRequisitos(List.of(ingenieriaDeSistemas));
+        this.cursos.add(sistemasDeInformacion);
+        Asignatura informaticaYSociedad = new Asignatura("informatica y sociedad","B",inso);
+        informaticaYSociedad.setRequisitos(List.of(comunicacionEfectiva));
+        this.cursos.add(informaticaYSociedad);
+        Asignatura fundamentosIngenieriaDeSoftware = new Asignatura("Fundamentos de ingenieria de software","B",fundaIngSoft);
+        fundamentosIngenieriaDeSoftware.setRequisitos(List.of(paradigmasDeProgramacion));
+        this.cursos.add(fundamentosIngenieriaDeSoftware);
+        Asignatura organizacionDeComputadores = new Asignatura("Organizacion de computadores","B",orga);
+        organizacionDeComputadores.setRequisitos(List.of(estructuraDeComputadores));
+        this.cursos.add(new Asignatura("Organizacion de computadores","B",orga));
+        Asignatura disenioBaseDeDatos = new Asignatura("Disenio base de datos","B",basedatos);
+        disenioBaseDeDatos.setRequisitos(List.of(paradigmasDeProgramacion));
+        this.cursos.add(disenioBaseDeDatos);
+        Asignatura inglesIV = new Asignatura("Ingles 4","B",ingles4);
+        inglesIV.setRequisitos(List.of(inglesIII));
+        this.cursos.add(inglesIV);
+        Asignatura tecnicasDeIngenieriaDeSoftware = new Asignatura("Tecnicas de ingenieria de software","B",tecnias);
+        tecnicasDeIngenieriaDeSoftware.setRequisitos(List.of(fundamentosIngenieriaDeSoftware));
+        this.cursos.add(tecnicasDeIngenieriaDeSoftware);
+        Asignatura redesComputacionales = new Asignatura("Redes computacionales","B",redes);
+        redesComputacionales.setRequisitos(List.of(organizacionDeComputadores));
+        this.cursos.add(redesComputacionales);
+        Asignatura administracionProyectosInformaticos = new Asignatura("Administracion de proyectos informaticos","B",adminProyec);
+        administracionProyectosInformaticos.setRequisitos(List.of(evaluacionProyectosInformaticos));
+        this.cursos.add(administracionProyectosInformaticos);
+        Asignatura sistemasOperativos = new Asignatura("Sistemas operativos","B",sistemasOper);
+        sistemasOperativos.setRequisitos(List.of(analisisDeAlgoritmos,organizacionDeComputadores));
+        this.cursos.add(sistemasOperativos);
+        Asignatura tallerBaseDatos = new Asignatura("Taller base de datos","B",tallerbase);
+        tallerBaseDatos.setRequisitos(List.of(fundamentosIngenieriaDeSoftware,disenioBaseDeDatos));
+        this.cursos.add(tallerBaseDatos);
+        Asignatura topicoEspecialidad1 = new Asignatura("Topicos 1","B",top1);
+        topicoEspecialidad1.setRequisitos(List.of(tecnicasDeIngenieriaDeSoftware,redesComputacionales));
+        this.cursos.add(topicoEspecialidad1);
+        Asignatura topicoEspecialidad2 = new Asignatura("Topicos 2","B",top2);
+        topicoEspecialidad2.setRequisitos(List.of(tecnicasDeIngenieriaDeSoftware,redesComputacionales));
+        this.cursos.add(topicoEspecialidad2);
+        Asignatura topicoEspecialidad3 = new Asignatura("Topicos 3","B",top3);
+        topicoEspecialidad3.setRequisitos(List.of(tecnicasDeIngenieriaDeSoftware,redesComputacionales,administracionProyectosInformaticos));
+        this.cursos.add(topicoEspecialidad3);
+        Asignatura seminarioDeComputacionEInformatica = new Asignatura("Seminario de computacion e informatica","B",semina);
+        seminarioDeComputacionEInformatica.setRequisitos(List.of(informaticaYSociedad,sistemasDeInformacion,sistemasOperativos,tallerBaseDatos));
+        this.cursos.add(seminarioDeComputacionEInformatica);
+        Asignatura proyectoDeIngenieriaDeSoftware = new Asignatura("Proyecto de ingenieria de software","B",proyec);
+        proyectoDeIngenieriaDeSoftware.setRequisitos(List.of(tallerBaseDatos,tecnicasDeIngenieriaDeSoftware,administracionProyectosInformaticos));
+        this.cursos.add(proyectoDeIngenieriaDeSoftware);
+        Asignatura trabajoDeTitulacion = new Asignatura("Trabajo de titulacion","B",titu);
+        trabajoDeTitulacion.setRequisitos(List.of(seminarioDeComputacionEInformatica));
+        this.cursos.add(trabajoDeTitulacion);
     }
 
+    private void actualizarEstadoAsignatura(Asignatura curso){
+        switch (curso.getEstado()){
+            case "A": //aprobada
+                curso.setEstado("B");
+                break;
+            case "D": //disponible
+                curso.setEstado("A");
+                break;
+            case "B": //bloqueada
+                //No altera el estado de la malla
+                break;
+        }
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
