@@ -1835,6 +1835,7 @@ public class verMallaScreen extends javax.swing.JFrame {
         sia.setBackground(COLORASIGREQUI);
         sistemasOper.setBackground(COLORASIGREQUI);
         tallerbase.setBackground(COLORASIGREQUI);
+        titu.setBackground(COLORASIGDISPO);
     }//GEN-LAST:event_seminaMouseEntered
 
     private void tituMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tituMouseEntered

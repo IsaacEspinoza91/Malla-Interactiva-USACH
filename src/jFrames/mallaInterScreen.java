@@ -7,6 +7,7 @@ package jFrames;
 import Asignatura.Asignatura;
 import java.util.ArrayList;
 import java.util.List;
+import java.awt.Color;
 
 /**
  *
@@ -14,6 +15,12 @@ import java.util.List;
  */
 public class mallaInterScreen extends javax.swing.JFrame {
 
+    
+    Color COLORASIGDISPO = new Color(234,118,0);
+    Color COLORASIGDEFAULT = new Color(117,117,117);
+    Color COLORASIGAPROB = new Color(57,64,73);
+    
+    
     //Atributos
     List<Asignatura> cursos = new ArrayList<>();
     
@@ -59,7 +66,7 @@ public class mallaInterScreen extends javax.swing.JFrame {
         Asignatura comunicacionEfectiva = new Asignatura("Comunicacion efectiva","B",comunicacionEfc);
         comunicacionEfectiva.setRequisitos(List.of(tallerDesarrolloPersonal));
         this.cursos.add(comunicacionEfectiva);
-        Asignatura inglesI = new Asignatura("ingles1","B",ingles1);
+        Asignatura inglesI = new Asignatura("Ingles 1","B",ingles1);
         inglesI.setRequisitos(List.of(metodosDeEstudio));
         this.cursos.add(inglesI);
         Asignatura ecuacionesDiferenciales = new Asignatura("Ecuaciones diferenciales","B",edo);
@@ -95,11 +102,10 @@ public class mallaInterScreen extends javax.swing.JFrame {
         Asignatura inglesIII = new Asignatura("Ingles 3","B",ingles3);
         inglesIII.setRequisitos(List.of(inglesII));
         this.cursos.add(inglesIII);
-        inglesIII.setRequisitos(List.of(inglesII));
         Asignatura sistemasDeInformacion = new Asignatura("Sistemas de informacion","B",sia);
         sistemasDeInformacion.setRequisitos(List.of(ingenieriaDeSistemas));
         this.cursos.add(sistemasDeInformacion);
-        Asignatura informaticaYSociedad = new Asignatura("informatica y sociedad","B",inso);
+        Asignatura informaticaYSociedad = new Asignatura("Informatica y sociedad","B",inso);
         informaticaYSociedad.setRequisitos(List.of(comunicacionEfectiva));
         this.cursos.add(informaticaYSociedad);
         Asignatura fundamentosIngenieriaDeSoftware = new Asignatura("Fundamentos de ingenieria de software","B",fundaIngSoft);
@@ -107,7 +113,7 @@ public class mallaInterScreen extends javax.swing.JFrame {
         this.cursos.add(fundamentosIngenieriaDeSoftware);
         Asignatura organizacionDeComputadores = new Asignatura("Organizacion de computadores","B",orga);
         organizacionDeComputadores.setRequisitos(List.of(estructuraDeComputadores));
-        this.cursos.add(new Asignatura("Organizacion de computadores","B",orga));
+        this.cursos.add(organizacionDeComputadores);
         Asignatura disenioBaseDeDatos = new Asignatura("Disenio base de datos","B",basedatos);
         disenioBaseDeDatos.setRequisitos(List.of(paradigmasDeProgramacion));
         this.cursos.add(disenioBaseDeDatos);
@@ -147,22 +153,12 @@ public class mallaInterScreen extends javax.swing.JFrame {
         Asignatura trabajoDeTitulacion = new Asignatura("Trabajo de titulacion","B",titu);
         trabajoDeTitulacion.setRequisitos(List.of(seminarioDeComputacionEInformatica));
         this.cursos.add(trabajoDeTitulacion);
+        
+        actualizarEstadoTodasLasAsignaturas();
+        actualizarVisualizacionTodasLasAsignaturas();
     }
 
-    private void actualizarEstadoAsignatura(Asignatura curso){
-        switch (curso.getEstado()){
-            case "A": //aprobada
-                curso.setEstado("B");
-                break;
-            case "D": //disponible
-                curso.setEstado("A");
-                break;
-            case "B": //bloqueada
-                //No altera el estado de la malla
-                break;
-        }
-    }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -441,10 +437,15 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
         );
 
+        cal1.setBackground(new java.awt.Color(117, 117, 117));
         cal1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        cal1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cal1MouseClicked(evt);
+            }
+        });
 
         jLabel19.setText("<html><center>Cálculo I para Ingeniería");
-        jLabel19.setToolTipText("");
 
         javax.swing.GroupLayout cal1Layout = new javax.swing.GroupLayout(cal1);
         cal1.setLayout(cal1Layout);
@@ -457,7 +458,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        alg1.setBackground(new java.awt.Color(117, 117, 117));
         alg1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        alg1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                alg1MouseClicked(evt);
+            }
+        });
 
         jLabel20.setText("<html><center>Álgebra I para Ingeniería");
 
@@ -472,7 +479,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        fis1.setBackground(new java.awt.Color(117, 117, 117));
         fis1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        fis1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                fis1MouseClicked(evt);
+            }
+        });
 
         jLabel21.setText("<html><center>Física I para Ingeniería");
 
@@ -487,7 +500,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        tallDesPer.setBackground(new java.awt.Color(117, 117, 117));
         tallDesPer.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        tallDesPer.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tallDesPerMouseClicked(evt);
+            }
+        });
 
         jLabel22.setText("<html><center>Taller de desarrollo personal e integral");
 
@@ -502,7 +521,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        introIng.setBackground(new java.awt.Color(117, 117, 117));
         introIng.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        introIng.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                introIngMouseClicked(evt);
+            }
+        });
 
         jLabel23.setText("<html><center>Introducción a la ingeniería");
 
@@ -517,8 +542,15 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        metEstud.setBackground(new java.awt.Color(117, 117, 117));
         metEstud.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        metEstud.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                metEstudMouseClicked(evt);
+            }
+        });
 
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel24.setText("<html><center>Métodos de Estudio");
 
         javax.swing.GroupLayout metEstudLayout = new javax.swing.GroupLayout(metEstud);
@@ -532,7 +564,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        cal2.setBackground(new java.awt.Color(117, 117, 117));
         cal2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        cal2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cal2MouseClicked(evt);
+            }
+        });
 
         jLabel25.setText("<html><center>Cálculo II para Ingeniería");
 
@@ -547,7 +585,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        introIngInfor.setBackground(new java.awt.Color(117, 117, 117));
         introIngInfor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        introIngInfor.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                introIngInforMouseClicked(evt);
+            }
+        });
 
         jLabel30.setText("<html><center>Introducción a la Ingeniería Informática");
 
@@ -562,7 +606,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        estadis.setBackground(new java.awt.Color(117, 117, 117));
         estadis.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        estadis.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                estadisMouseClicked(evt);
+            }
+        });
 
         jLabel36.setText("<html><center>Análisis estadístico para Ingenería");
 
@@ -577,10 +627,11 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        alg2.setBackground(new java.awt.Color(117, 117, 117));
         alg2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         alg2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                alg2MouseEntered(evt);
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                alg2MouseClicked(evt);
             }
         });
 
@@ -597,7 +648,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        fis2.setBackground(new java.awt.Color(117, 117, 117));
         fis2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        fis2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                fis2MouseClicked(evt);
+            }
+        });
 
         jLabel27.setText("<html><center>Física II para Ingeniería");
 
@@ -612,7 +669,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        fundaProgra.setBackground(new java.awt.Color(117, 117, 117));
         fundaProgra.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        fundaProgra.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                fundaPrograMouseClicked(evt);
+            }
+        });
 
         jLabel28.setText("<html><center>Fundamentos de computación y programación");
 
@@ -627,7 +690,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        quimica.setBackground(new java.awt.Color(117, 117, 117));
         quimica.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        quimica.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                quimicaMouseClicked(evt);
+            }
+        });
 
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel29.setText("<html><center>Química general");
@@ -643,7 +712,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        metodos.setBackground(new java.awt.Color(117, 117, 117));
         metodos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        metodos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                metodosMouseClicked(evt);
+            }
+        });
 
         jLabel35.setText("<html><center>Métodos de programación");
 
@@ -658,7 +733,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        edo.setBackground(new java.awt.Color(117, 117, 117));
         edo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        edo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                edoMouseClicked(evt);
+            }
+        });
 
         jLabel34.setText("<html><center>Ecuaciones diferenciales y métodos numéricos para Ingeniería");
 
@@ -673,7 +754,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        ingles1.setBackground(new java.awt.Color(117, 117, 117));
         ingles1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        ingles1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ingles1MouseClicked(evt);
+            }
+        });
 
         jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel33.setText("Inglés I");
@@ -689,7 +776,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        electro.setBackground(new java.awt.Color(117, 117, 117));
         electro.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        electro.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                electroMouseClicked(evt);
+            }
+        });
 
         jLabel32.setText("<html><center>Electricidad y magnetismo para Ingeniería");
 
@@ -704,7 +797,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        comunicacionEfc.setBackground(new java.awt.Color(117, 117, 117));
         comunicacionEfc.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        comunicacionEfc.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                comunicacionEfcMouseClicked(evt);
+            }
+        });
 
         jLabel31.setText("<html><center>Comunicación Efectiva");
 
@@ -719,7 +818,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        ingesis.setBackground(new java.awt.Color(117, 117, 117));
         ingesis.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        ingesis.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ingesisMouseClicked(evt);
+            }
+        });
 
         jLabel41.setText("<html><center>Ingeniería de sistemas");
 
@@ -734,7 +839,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        evalucion.setBackground(new java.awt.Color(117, 117, 117));
         evalucion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        evalucion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                evalucionMouseClicked(evt);
+            }
+        });
 
         jLabel51.setText("<html><center>Evaluación de proyectos informáticos");
 
@@ -749,7 +860,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel51, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        sistemasOper.setBackground(new java.awt.Color(117, 117, 117));
         sistemasOper.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        sistemasOper.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                sistemasOperMouseClicked(evt);
+            }
+        });
 
         jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel52.setText("<html><center>Sistemas operativos");
@@ -765,7 +882,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel52, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        proyec.setBackground(new java.awt.Color(117, 117, 117));
         proyec.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        proyec.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                proyecMouseClicked(evt);
+            }
+        });
 
         jLabel57.setText("<html><center>Proyecto de ingeniería de software");
 
@@ -780,7 +903,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        titu.setBackground(new java.awt.Color(117, 117, 117));
         titu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        titu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tituMouseClicked(evt);
+            }
+        });
 
         jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel56.setText("<html><center>Trabajo de Titulación");
@@ -796,7 +925,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        top1.setBackground(new java.awt.Color(117, 117, 117));
         top1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        top1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                top1MouseClicked(evt);
+            }
+        });
 
         jLabel59.setText("<html><center>Tópicos de especialidad I");
 
@@ -811,7 +946,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        top2.setBackground(new java.awt.Color(117, 117, 117));
         top2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        top2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                top2MouseClicked(evt);
+            }
+        });
 
         jLabel60.setText("<html><center>Tópicos de especialidad II");
 
@@ -826,7 +967,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        edecu.setBackground(new java.awt.Color(117, 117, 117));
         edecu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        edecu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                edecuMouseClicked(evt);
+            }
+        });
 
         jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel43.setText("<html><center>Estructura de computadores</center></html>");
@@ -842,7 +989,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        fundeco.setBackground(new java.awt.Color(117, 117, 117));
         fundeco.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        fundeco.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                fundecoMouseClicked(evt);
+            }
+        });
 
         jLabel42.setText("<html><center>Fundamentos de economía");
 
@@ -857,7 +1010,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        basedatos.setBackground(new java.awt.Color(117, 117, 117));
         basedatos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        basedatos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                basedatosMouseClicked(evt);
+            }
+        });
 
         jLabel50.setText("<html><center>Diseño de bases de datos");
 
@@ -872,7 +1031,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        tallerbase.setBackground(new java.awt.Color(117, 117, 117));
         tallerbase.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        tallerbase.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tallerbaseMouseClicked(evt);
+            }
+        });
 
         jLabel53.setText("<html><center>Taller de bases de datos");
 
@@ -887,7 +1052,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        orga.setBackground(new java.awt.Color(117, 117, 117));
         orga.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        orga.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                orgaMouseClicked(evt);
+            }
+        });
 
         jLabel49.setText("<html><center>Organización de computadores");
 
@@ -902,7 +1073,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel49, javax.swing.GroupLayout.DEFAULT_SIZE, 63, Short.MAX_VALUE)
         );
 
+        adminProyec.setBackground(new java.awt.Color(117, 117, 117));
         adminProyec.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        adminProyec.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                adminProyecMouseClicked(evt);
+            }
+        });
 
         jLabel54.setText("<html><center>Administración de proyectos informáticos");
 
@@ -917,7 +1094,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        paradigmas.setBackground(new java.awt.Color(117, 117, 117));
         paradigmas.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        paradigmas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                paradigmasMouseClicked(evt);
+            }
+        });
 
         jLabel44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel44.setText("<html><center>Paradigmas de programación");
@@ -933,7 +1116,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        fundaIngSoft.setBackground(new java.awt.Color(117, 117, 117));
         fundaIngSoft.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        fundaIngSoft.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                fundaIngSoftMouseClicked(evt);
+            }
+        });
 
         jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel48.setText("<html><center>Fundamentos de ingeniería de software");
@@ -949,7 +1138,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        tecnias.setBackground(new java.awt.Color(117, 117, 117));
         tecnias.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        tecnias.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tecniasMouseClicked(evt);
+            }
+        });
 
         jLabel55.setText("<html><center>Técnicas de ingeniería de software");
 
@@ -964,7 +1159,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel55, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        top3.setBackground(new java.awt.Color(117, 117, 117));
         top3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        top3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                top3MouseClicked(evt);
+            }
+        });
 
         jLabel61.setText("<html><center>Tópicos de especialidad III");
 
@@ -979,7 +1180,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        eda.setBackground(new java.awt.Color(117, 117, 117));
         eda.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        eda.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                edaMouseClicked(evt);
+            }
+        });
 
         jLabel45.setText("<html><center>Análisis de algoritmos y estructura de datos");
 
@@ -994,7 +1201,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        inso.setBackground(new java.awt.Color(117, 117, 117));
         inso.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        inso.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                insoMouseClicked(evt);
+            }
+        });
 
         jLabel47.setText("<html><center>Informática y sociedad");
 
@@ -1013,7 +1226,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
                 .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        redes.setBackground(new java.awt.Color(117, 117, 117));
         redes.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        redes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                redesMouseClicked(evt);
+            }
+        });
 
         jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel39.setText("<html><center>Redes computacionales");
@@ -1029,11 +1248,16 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        semina.setBackground(new java.awt.Color(117, 117, 117));
         semina.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        semina.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                seminaMouseClicked(evt);
+            }
+        });
 
         jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel58.setText("<html><center>Seminario de computación e informática");
-        jLabel58.setToolTipText("");
 
         javax.swing.GroupLayout seminaLayout = new javax.swing.GroupLayout(semina);
         semina.setLayout(seminaLayout);
@@ -1046,7 +1270,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel58, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        ingles2.setBackground(new java.awt.Color(117, 117, 117));
         ingles2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        ingles2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ingles2MouseClicked(evt);
+            }
+        });
 
         jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel40.setText("Inglés II");
@@ -1062,7 +1292,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel40, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        sia.setBackground(new java.awt.Color(117, 117, 117));
         sia.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        sia.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                siaMouseClicked(evt);
+            }
+        });
 
         jLabel46.setText("<html><center>Sistemas de información");
 
@@ -1077,7 +1313,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        ingles3.setBackground(new java.awt.Color(117, 117, 117));
         ingles3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        ingles3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ingles3MouseClicked(evt);
+            }
+        });
 
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel37.setText("Inglés III");
@@ -1093,7 +1335,13 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        ingles4.setBackground(new java.awt.Color(117, 117, 117));
         ingles4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        ingles4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ingles4MouseClicked(evt);
+            }
+        });
 
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel38.setText("Inglés IV");
@@ -1338,11 +1586,246 @@ public class mallaInterScreen extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void alg2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alg2MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_alg2MouseEntered
+    private void actualizarEstadoAsignatura(Asignatura curso){
+        
+        if(curso.getEstado().equals("B") && curso.getRequisitos().isEmpty()){
+            curso.setEstado("D");
+        }
+        
+        //Proceso para verificar que todos los requisitos del curso estan aprobados o no
+        boolean allRequisitosAprobados = true;
+        for(Asignatura asig : curso.getRequisitos()) {
+            if(!asig.getEstado().equals("A")) {
+                allRequisitosAprobados = false; 
+            }
+        }
+        
+        if(allRequisitosAprobados && !curso.getEstado().equals("A")){
+            curso.setEstado("D");
+        }else if(!allRequisitosAprobados && !curso.getEstado().equals("A")){
+            curso.setEstado("B");
+        }
+    }
+    
+    private void actualizarEstadoTodasLasAsignaturas(){
+        for (Asignatura asig : cursos) {
+            actualizarEstadoAsignatura(asig);
+        }
+    }
+    
+    private void actualizarVisualizacionTodasLasAsignaturas(){
+        for (Asignatura asig : cursos) {
+            switch (asig.getEstado()){
+                case "A":
+                    asig.getPanel().setBackground(COLORASIGAPROB);
+                    break;
+                case "B":
+                    asig.getPanel().setBackground(COLORASIGDEFAULT);
+                    break;
+                case "D":
+                    asig.getPanel().setBackground(COLORASIGDISPO);
+                    break;
+            }
+        }
+    }
+    
+    private Asignatura getAsignaturaByName(String name){
+        for (Asignatura asig : cursos) {
+            if(asig.getNombre().equals(name)) {
+                return asig;
+            }
+        }
+        return null;
+    }
+    
+    private void interaccionJPanelConAsignatura(Asignatura curso){
+        if(!curso.getEstado().equals("B")){ //caso en que no este bloqueada
+            actualizarEstadoTodasLasAsignaturas();
+            actualizarVisualizacionTodasLasAsignaturas();
+            if(curso.getEstado().equals("D")){
+                curso.setEstado("A");
+            }else{  //caso que ya este aprobada
+                curso.setEstado("D");
+            }
+            actualizarEstadoTodasLasAsignaturas();
+            actualizarVisualizacionTodasLasAsignaturas();
+        }
+    }
+    
+    private void cal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cal1MouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Calculo 1"));
+    }//GEN-LAST:event_cal1MouseClicked
+
+    private void alg1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alg1MouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Algebra 1"));
+    }//GEN-LAST:event_alg1MouseClicked
+
+    private void fis1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fis1MouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Fisica 1"));
+    }//GEN-LAST:event_fis1MouseClicked
+
+    private void tallDesPerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tallDesPerMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Taller desarrollo personal"));
+    }//GEN-LAST:event_tallDesPerMouseClicked
+
+    private void introIngMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_introIngMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Introduccion a la ingenieria"));
+    }//GEN-LAST:event_introIngMouseClicked
+
+    private void metEstudMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metEstudMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Metodos de estudio"));
+    }//GEN-LAST:event_metEstudMouseClicked
+
+    private void cal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cal2MouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Calculo 2"));
+    }//GEN-LAST:event_cal2MouseClicked
+
+    private void alg2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alg2MouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Algebra 2"));
+    }//GEN-LAST:event_alg2MouseClicked
+
+    private void fis2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fis2MouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Fisica 2"));
+    }//GEN-LAST:event_fis2MouseClicked
+
+    private void fundaPrograMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundaPrograMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Fundamentos de programacion"));
+    }//GEN-LAST:event_fundaPrograMouseClicked
+
+    private void quimicaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quimicaMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Quimica"));
+    }//GEN-LAST:event_quimicaMouseClicked
+
+    private void introIngInforMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_introIngInforMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Introduccion ingenieria informatica"));
+    }//GEN-LAST:event_introIngInforMouseClicked
+
+    private void electroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_electroMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Electro"));
+    }//GEN-LAST:event_electroMouseClicked
+
+    private void comunicacionEfcMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_comunicacionEfcMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Comunicacion efectiva"));
+    }//GEN-LAST:event_comunicacionEfcMouseClicked
+
+    private void edoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edoMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Ecuaciones diferenciales"));
+    }//GEN-LAST:event_edoMouseClicked
+
+    private void ingles1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles1MouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Ingles 1"));
+    }//GEN-LAST:event_ingles1MouseClicked
+
+    private void metodosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metodosMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Metodos de programacion"));
+    }//GEN-LAST:event_metodosMouseClicked
+
+    private void estadisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_estadisMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Analisis estadistico"));
+    }//GEN-LAST:event_estadisMouseClicked
+
+    private void ingesisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingesisMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Ingenieria de sistemas"));
+    }//GEN-LAST:event_ingesisMouseClicked
+
+    private void fundecoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundecoMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Fundamentos de economia"));
+    }//GEN-LAST:event_fundecoMouseClicked
+
+    private void edecuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edecuMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Estructura de computadores"));
+    }//GEN-LAST:event_edecuMouseClicked
+
+    private void paradigmasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_paradigmasMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Paradigmas de programacion"));
+    }//GEN-LAST:event_paradigmasMouseClicked
+
+    private void edaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edaMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Analisis de algoritmos y estructura de datos"));
+    }//GEN-LAST:event_edaMouseClicked
+
+    private void ingles2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles2MouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Ingles 2"));
+    }//GEN-LAST:event_ingles2MouseClicked
+
+    private void evalucionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_evalucionMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Evaluacion de proyectos informaticos"));
+    }//GEN-LAST:event_evalucionMouseClicked
+
+    private void basedatosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_basedatosMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Disenio base de datos"));
+    }//GEN-LAST:event_basedatosMouseClicked
+
+    private void orgaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orgaMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Organizacion de computadores"));
+    }//GEN-LAST:event_orgaMouseClicked
+
+    private void insoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_insoMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Informatica y sociedad"));
+    }//GEN-LAST:event_insoMouseClicked
+
+    private void siaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siaMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Sistemas de informacion"));
+    }//GEN-LAST:event_siaMouseClicked
+
+    private void ingles3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles3MouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Ingles 3"));
+    }//GEN-LAST:event_ingles3MouseClicked
+
+    private void fundaIngSoftMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundaIngSoftMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Fundamentos de ingenieria de software"));
+    }//GEN-LAST:event_fundaIngSoftMouseClicked
+
+    private void ingles4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles4MouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Ingles 4"));
+    }//GEN-LAST:event_ingles4MouseClicked
+
+    private void redesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_redesMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Redes computacionales"));
+    }//GEN-LAST:event_redesMouseClicked
+
+    private void tecniasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tecniasMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Tecnicas de ingenieria de software"));
+    }//GEN-LAST:event_tecniasMouseClicked
+
+    private void adminProyecMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adminProyecMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Administracion de proyectos informaticos"));
+    }//GEN-LAST:event_adminProyecMouseClicked
+
+    private void tallerbaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tallerbaseMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Taller base de datos"));
+    }//GEN-LAST:event_tallerbaseMouseClicked
+
+    private void sistemasOperMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sistemasOperMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Sistemas operativos"));
+    }//GEN-LAST:event_sistemasOperMouseClicked
+
+    private void proyecMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_proyecMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Proyecto de ingenieria de software"));
+    }//GEN-LAST:event_proyecMouseClicked
+
+    private void top1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top1MouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Topicos 1"));
+    }//GEN-LAST:event_top1MouseClicked
+
+    private void top2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top2MouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Topicos 2"));
+    }//GEN-LAST:event_top2MouseClicked
+
+    private void top3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top3MouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Topicos 3"));
+    }//GEN-LAST:event_top3MouseClicked
+
+    private void seminaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seminaMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Seminario de computacion e informatica"));
+    }//GEN-LAST:event_seminaMouseClicked
+
+    private void tituMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tituMouseClicked
+        interaccionJPanelConAsignatura(getAsignaturaByName("Trabajo de titulacion"));
+    }//GEN-LAST:event_tituMouseClicked
 
     /**
      * @param args the command line arguments

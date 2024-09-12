@@ -60,6 +60,12 @@ public class Asignatura {
     public void setRequisitos(List<Asignatura> requisitos) {
         this.requisitos = requisitos;
     }
+    
+    public void aprobarAsignatura(){
+        if(this.estado.equals("D")){
+            this.estado = "A";
+        }
+    }
 
     @Override
     public String toString() {
