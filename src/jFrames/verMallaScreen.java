@@ -34,6 +34,7 @@ public class verMallaScreen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel4 = new javax.swing.JLabel();
         mainPanelMalla = new javax.swing.JPanel();
         n1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -137,15 +138,21 @@ public class verMallaScreen extends javax.swing.JFrame {
         jLabel37 = new javax.swing.JLabel();
         ingles4 = new javax.swing.JPanel();
         jLabel38 = new javax.swing.JLabel();
+        btVolver1 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel4.setText("<html><center>Todos los datos de las asignaturas han sido obtenidos del Sistema Académico Integrado (anteriormente conocido como LOA) de la Facultadad de Ingeniería de la Universidad de Santiago de Chile. Información actualizada al 12 de Septiembre de 2024.");
 
         mainPanelMalla.setBackground(new java.awt.Color(255, 255, 255));
         mainPanelMalla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         n1.setBackground(new java.awt.Color(234, 118, 0));
         n1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        n1.setToolTipText("");
         n1.setName(""); // NOI18N
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -165,7 +172,6 @@ public class verMallaScreen extends javax.swing.JFrame {
 
         n2.setBackground(new java.awt.Color(234, 118, 0));
         n2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        n2.setToolTipText("");
         n2.setName(""); // NOI18N
 
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
@@ -185,7 +191,6 @@ public class verMallaScreen extends javax.swing.JFrame {
 
         n3.setBackground(new java.awt.Color(234, 118, 0));
         n3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        n3.setToolTipText("");
         n3.setName(""); // NOI18N
 
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
@@ -205,7 +210,6 @@ public class verMallaScreen extends javax.swing.JFrame {
 
         n4.setBackground(new java.awt.Color(234, 118, 0));
         n4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        n4.setToolTipText("");
         n4.setName(""); // NOI18N
 
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
@@ -225,7 +229,6 @@ public class verMallaScreen extends javax.swing.JFrame {
 
         n5.setBackground(new java.awt.Color(234, 118, 0));
         n5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        n5.setToolTipText("");
         n5.setName(""); // NOI18N
 
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
@@ -245,7 +248,6 @@ public class verMallaScreen extends javax.swing.JFrame {
 
         n6.setBackground(new java.awt.Color(234, 118, 0));
         n6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        n6.setToolTipText("");
         n6.setName(""); // NOI18N
 
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
@@ -265,7 +267,6 @@ public class verMallaScreen extends javax.swing.JFrame {
 
         n7.setBackground(new java.awt.Color(234, 118, 0));
         n7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        n7.setToolTipText("");
         n7.setName(""); // NOI18N
 
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
@@ -285,7 +286,6 @@ public class verMallaScreen extends javax.swing.JFrame {
 
         n8.setBackground(new java.awt.Color(234, 118, 0));
         n8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        n8.setToolTipText("");
         n8.setName(""); // NOI18N
 
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
@@ -314,6 +314,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel19.setForeground(new java.awt.Color(242, 242, 242));
         jLabel19.setText("<html><center>Cálculo I para Ingeniería");
 
         javax.swing.GroupLayout cal1Layout = new javax.swing.GroupLayout(cal1);
@@ -338,6 +339,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel20.setForeground(new java.awt.Color(242, 242, 242));
         jLabel20.setText("<html><center>Álgebra I para Ingeniería");
 
         javax.swing.GroupLayout alg1Layout = new javax.swing.GroupLayout(alg1);
@@ -362,6 +364,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel21.setForeground(new java.awt.Color(242, 242, 242));
         jLabel21.setText("<html><center>Física I para Ingeniería");
 
         javax.swing.GroupLayout fis1Layout = new javax.swing.GroupLayout(fis1);
@@ -386,6 +389,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel22.setForeground(new java.awt.Color(242, 242, 242));
         jLabel22.setText("<html><center>Taller de desarrollo personal e integral");
 
         javax.swing.GroupLayout tallDesPerLayout = new javax.swing.GroupLayout(tallDesPer);
@@ -410,6 +414,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel23.setForeground(new java.awt.Color(242, 242, 242));
         jLabel23.setText("<html><center>Introducción a la ingeniería");
 
         javax.swing.GroupLayout introIngLayout = new javax.swing.GroupLayout(introIng);
@@ -434,6 +439,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel24.setForeground(new java.awt.Color(242, 242, 242));
         jLabel24.setText("<html><center>Métodos de Estudio");
 
         javax.swing.GroupLayout metEstudLayout = new javax.swing.GroupLayout(metEstud);
@@ -458,6 +464,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel25.setForeground(new java.awt.Color(242, 242, 242));
         jLabel25.setText("<html><center>Cálculo II para Ingeniería");
 
         javax.swing.GroupLayout cal2Layout = new javax.swing.GroupLayout(cal2);
@@ -482,6 +489,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel30.setForeground(new java.awt.Color(242, 242, 242));
         jLabel30.setText("<html><center>Introducción a la Ingeniería Informática");
 
         javax.swing.GroupLayout introIngInforLayout = new javax.swing.GroupLayout(introIngInfor);
@@ -506,6 +514,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel36.setForeground(new java.awt.Color(242, 242, 242));
         jLabel36.setText("<html><center>Análisis estadístico para Ingenería");
 
         javax.swing.GroupLayout estadisLayout = new javax.swing.GroupLayout(estadis);
@@ -530,6 +539,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel26.setForeground(new java.awt.Color(242, 242, 242));
         jLabel26.setText("<html><center>Álgebra II para Ingeniería");
 
         javax.swing.GroupLayout alg2Layout = new javax.swing.GroupLayout(alg2);
@@ -554,6 +564,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel27.setForeground(new java.awt.Color(242, 242, 242));
         jLabel27.setText("<html><center>Física II para Ingeniería");
 
         javax.swing.GroupLayout fis2Layout = new javax.swing.GroupLayout(fis2);
@@ -578,6 +589,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel28.setForeground(new java.awt.Color(242, 242, 242));
         jLabel28.setText("<html><center>Fundamentos de computación y programación");
 
         javax.swing.GroupLayout fundaPrograLayout = new javax.swing.GroupLayout(fundaProgra);
@@ -602,6 +614,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel29.setForeground(new java.awt.Color(242, 242, 242));
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel29.setText("<html><center>Química general");
 
@@ -627,6 +640,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel35.setForeground(new java.awt.Color(242, 242, 242));
         jLabel35.setText("<html><center>Métodos de programación");
 
         javax.swing.GroupLayout metodosLayout = new javax.swing.GroupLayout(metodos);
@@ -651,6 +665,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel34.setForeground(new java.awt.Color(242, 242, 242));
         jLabel34.setText("<html><center>Ecuaciones diferenciales y métodos numéricos para Ingeniería");
 
         javax.swing.GroupLayout edoLayout = new javax.swing.GroupLayout(edo);
@@ -675,6 +690,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel33.setForeground(new java.awt.Color(242, 242, 242));
         jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel33.setText("Inglés I");
 
@@ -700,6 +716,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel32.setForeground(new java.awt.Color(242, 242, 242));
         jLabel32.setText("<html><center>Electricidad y magnetismo para Ingeniería");
 
         javax.swing.GroupLayout electroLayout = new javax.swing.GroupLayout(electro);
@@ -724,6 +741,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel31.setForeground(new java.awt.Color(242, 242, 242));
         jLabel31.setText("<html><center>Comunicación Efectiva");
 
         javax.swing.GroupLayout comunicacionEfcLayout = new javax.swing.GroupLayout(comunicacionEfc);
@@ -748,6 +766,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel41.setForeground(new java.awt.Color(242, 242, 242));
         jLabel41.setText("<html><center>Ingeniería de sistemas");
 
         javax.swing.GroupLayout ingesisLayout = new javax.swing.GroupLayout(ingesis);
@@ -772,6 +791,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel51.setForeground(new java.awt.Color(242, 242, 242));
         jLabel51.setText("<html><center>Evaluación de proyectos informáticos");
 
         javax.swing.GroupLayout evaluacionLayout = new javax.swing.GroupLayout(evaluacion);
@@ -796,6 +816,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel52.setForeground(new java.awt.Color(242, 242, 242));
         jLabel52.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel52.setText("<html><center>Sistemas operativos");
 
@@ -821,6 +842,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel57.setForeground(new java.awt.Color(242, 242, 242));
         jLabel57.setText("<html><center>Proyecto de ingeniería de software");
 
         javax.swing.GroupLayout proyecLayout = new javax.swing.GroupLayout(proyec);
@@ -845,6 +867,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel56.setForeground(new java.awt.Color(242, 242, 242));
         jLabel56.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel56.setText("<html><center>Trabajo de Titulación");
 
@@ -870,6 +893,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel59.setForeground(new java.awt.Color(242, 242, 242));
         jLabel59.setText("<html><center>Tópicos de especialidad I");
 
         javax.swing.GroupLayout top1Layout = new javax.swing.GroupLayout(top1);
@@ -894,6 +918,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel60.setForeground(new java.awt.Color(242, 242, 242));
         jLabel60.setText("<html><center>Tópicos de especialidad II");
 
         javax.swing.GroupLayout top2Layout = new javax.swing.GroupLayout(top2);
@@ -918,6 +943,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel43.setForeground(new java.awt.Color(242, 242, 242));
         jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel43.setText("<html><center>Estructura de computadores</center></html>");
 
@@ -943,6 +969,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel42.setForeground(new java.awt.Color(242, 242, 242));
         jLabel42.setText("<html><center>Fundamentos de economía");
 
         javax.swing.GroupLayout fundecoLayout = new javax.swing.GroupLayout(fundeco);
@@ -967,6 +994,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel50.setForeground(new java.awt.Color(242, 242, 242));
         jLabel50.setText("<html><center>Diseño de bases de datos");
 
         javax.swing.GroupLayout basedatosLayout = new javax.swing.GroupLayout(basedatos);
@@ -991,6 +1019,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel53.setForeground(new java.awt.Color(242, 242, 242));
         jLabel53.setText("<html><center>Taller de bases de datos");
 
         javax.swing.GroupLayout tallerbaseLayout = new javax.swing.GroupLayout(tallerbase);
@@ -1015,6 +1044,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel49.setForeground(new java.awt.Color(242, 242, 242));
         jLabel49.setText("<html><center>Organización de computadores");
 
         javax.swing.GroupLayout orgaLayout = new javax.swing.GroupLayout(orga);
@@ -1039,6 +1069,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel54.setForeground(new java.awt.Color(242, 242, 242));
         jLabel54.setText("<html><center>Administración de proyectos informáticos");
 
         javax.swing.GroupLayout adminProyecLayout = new javax.swing.GroupLayout(adminProyec);
@@ -1063,6 +1094,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel44.setForeground(new java.awt.Color(242, 242, 242));
         jLabel44.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel44.setText("<html><center>Paradigmas de programación");
 
@@ -1088,6 +1120,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel48.setForeground(new java.awt.Color(242, 242, 242));
         jLabel48.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel48.setText("<html><center>Fundamentos de ingeniería de software");
 
@@ -1113,6 +1146,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel55.setForeground(new java.awt.Color(242, 242, 242));
         jLabel55.setText("<html><center>Técnicas de ingeniería de software");
 
         javax.swing.GroupLayout tecniasLayout = new javax.swing.GroupLayout(tecnias);
@@ -1137,6 +1171,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel61.setForeground(new java.awt.Color(242, 242, 242));
         jLabel61.setText("<html><center>Tópicos de especialidad III");
 
         javax.swing.GroupLayout top3Layout = new javax.swing.GroupLayout(top3);
@@ -1161,6 +1196,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel45.setForeground(new java.awt.Color(242, 242, 242));
         jLabel45.setText("<html><center>Análisis de algoritmos y estructura de datos");
 
         javax.swing.GroupLayout edaLayout = new javax.swing.GroupLayout(eda);
@@ -1185,6 +1221,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel47.setForeground(new java.awt.Color(242, 242, 242));
         jLabel47.setText("<html><center>Informática y sociedad");
 
         javax.swing.GroupLayout insoLayout = new javax.swing.GroupLayout(inso);
@@ -1213,6 +1250,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel39.setForeground(new java.awt.Color(242, 242, 242));
         jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel39.setText("<html><center>Redes computacionales");
 
@@ -1238,6 +1276,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel58.setForeground(new java.awt.Color(242, 242, 242));
         jLabel58.setText("<html><center>Seminario de computación e informática");
 
         javax.swing.GroupLayout seminaLayout = new javax.swing.GroupLayout(semina);
@@ -1262,6 +1301,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel40.setForeground(new java.awt.Color(242, 242, 242));
         jLabel40.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel40.setText("Inglés II");
 
@@ -1287,6 +1327,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel46.setForeground(new java.awt.Color(242, 242, 242));
         jLabel46.setText("<html><center>Sistemas de información");
 
         javax.swing.GroupLayout siaLayout = new javax.swing.GroupLayout(sia);
@@ -1311,6 +1352,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel37.setForeground(new java.awt.Color(242, 242, 242));
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel37.setText("Inglés III");
 
@@ -1336,6 +1378,7 @@ public class verMallaScreen extends javax.swing.JFrame {
             }
         });
 
+        jLabel38.setForeground(new java.awt.Color(242, 242, 242));
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel38.setText("Inglés IV");
 
@@ -1467,7 +1510,7 @@ public class verMallaScreen extends javax.swing.JFrame {
                                 .addComponent(sia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(ingles4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(11, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         mainPanelMallaLayout.setVerticalGroup(
             mainPanelMallaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1561,24 +1604,69 @@ public class verMallaScreen extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        btVolver1.setBackground(new java.awt.Color(234, 118, 0));
+        btVolver1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btVolver1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btVolver1.setFocusCycleRoot(true);
+        btVolver1.setFocusable(false);
+        btVolver1.setName(""); // NOI18N
+        btVolver1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btVolver1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btVolver1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btVolver1MouseExited(evt);
+            }
+        });
+
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("VOLVER");
+
+        javax.swing.GroupLayout btVolver1Layout = new javax.swing.GroupLayout(btVolver1);
+        btVolver1.setLayout(btVolver1Layout);
+        btVolver1Layout.setHorizontalGroup(
+            btVolver1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
+        );
+        btVolver1Layout.setVerticalGroup(
+            btVolver1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(mainPanelMalla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(mainPanelMalla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(btVolver1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(mainPanelMalla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addComponent(btVolver1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
+                .addComponent(mainPanelMalla, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void cal2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cal2MouseEntered
@@ -2034,6 +2122,20 @@ public class verMallaScreen extends javax.swing.JFrame {
         setColoresDefaultEnMalla();
     }//GEN-LAST:event_cal2MouseExited
 
+    private void btVolver1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVolver1MouseEntered
+        btVolver1.setBackground(COLORASIGDEFAULT);
+    }//GEN-LAST:event_btVolver1MouseEntered
+
+    private void btVolver1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVolver1MouseExited
+        btVolver1.setBackground(new Color(234,118,0));
+    }//GEN-LAST:event_btVolver1MouseExited
+
+    private void btVolver1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVolver1MouseClicked
+        mainScreen pantallaInicio = new mainScreen();
+        pantallaInicio.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btVolver1MouseClicked
+
     private void setColoresDefaultEnMalla(){
         cal1.setBackground(COLORASIGDEFAULT);
         alg1.setBackground(COLORASIGDEFAULT);
@@ -2120,6 +2222,7 @@ public class verMallaScreen extends javax.swing.JFrame {
     private javax.swing.JPanel alg1;
     private javax.swing.JPanel alg2;
     private javax.swing.JPanel basedatos;
+    private javax.swing.JPanel btVolver1;
     private javax.swing.JPanel cal1;
     private javax.swing.JPanel cal2;
     private javax.swing.JPanel comunicacionEfc;
@@ -2151,6 +2254,7 @@ public class verMallaScreen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
@@ -2171,6 +2275,7 @@ public class verMallaScreen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
