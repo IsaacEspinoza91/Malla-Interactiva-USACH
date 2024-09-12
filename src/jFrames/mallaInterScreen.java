@@ -437,11 +437,11 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
         );
 
-        cal1.setBackground(new java.awt.Color(117, 117, 117));
+        cal1.setBackground(new java.awt.Color(234, 118, 0));
         cal1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         cal1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cal1MouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                cal1MousePressed(evt);
             }
         });
 
@@ -458,11 +458,11 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        alg1.setBackground(new java.awt.Color(117, 117, 117));
+        alg1.setBackground(new java.awt.Color(234, 118, 0));
         alg1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         alg1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                alg1MouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                alg1MousePressed(evt);
             }
         });
 
@@ -479,11 +479,11 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        fis1.setBackground(new java.awt.Color(117, 117, 117));
+        fis1.setBackground(new java.awt.Color(234, 118, 0));
         fis1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         fis1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                fis1MouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                fis1MousePressed(evt);
             }
         });
 
@@ -500,11 +500,11 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        tallDesPer.setBackground(new java.awt.Color(117, 117, 117));
+        tallDesPer.setBackground(new java.awt.Color(234, 118, 0));
         tallDesPer.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tallDesPer.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tallDesPerMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                tallDesPerMousePressed(evt);
             }
         });
 
@@ -521,11 +521,11 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        introIng.setBackground(new java.awt.Color(117, 117, 117));
+        introIng.setBackground(new java.awt.Color(234, 118, 0));
         introIng.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         introIng.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                introIngMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                introIngMousePressed(evt);
             }
         });
 
@@ -542,11 +542,11 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        metEstud.setBackground(new java.awt.Color(117, 117, 117));
+        metEstud.setBackground(new java.awt.Color(234, 118, 0));
         metEstud.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         metEstud.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                metEstudMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                metEstudMousePressed(evt);
             }
         });
 
@@ -567,8 +567,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         cal2.setBackground(new java.awt.Color(117, 117, 117));
         cal2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         cal2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cal2MouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                cal2MousePressed(evt);
             }
         });
 
@@ -588,8 +588,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         introIngInfor.setBackground(new java.awt.Color(117, 117, 117));
         introIngInfor.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         introIngInfor.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                introIngInforMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                introIngInforMousePressed(evt);
             }
         });
 
@@ -609,8 +609,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         estadis.setBackground(new java.awt.Color(117, 117, 117));
         estadis.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         estadis.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                estadisMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                estadisMousePressed(evt);
             }
         });
 
@@ -630,8 +630,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         alg2.setBackground(new java.awt.Color(117, 117, 117));
         alg2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         alg2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                alg2MouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                alg2MousePressed(evt);
             }
         });
 
@@ -651,8 +651,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         fis2.setBackground(new java.awt.Color(117, 117, 117));
         fis2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         fis2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                fis2MouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                fis2MousePressed(evt);
             }
         });
 
@@ -672,8 +672,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         fundaProgra.setBackground(new java.awt.Color(117, 117, 117));
         fundaProgra.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         fundaProgra.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                fundaPrograMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                fundaPrograMousePressed(evt);
             }
         });
 
@@ -690,11 +690,11 @@ public class mallaInterScreen extends javax.swing.JFrame {
             .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        quimica.setBackground(new java.awt.Color(117, 117, 117));
+        quimica.setBackground(new java.awt.Color(234, 118, 0));
         quimica.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         quimica.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                quimicaMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                quimicaMousePressed(evt);
             }
         });
 
@@ -715,8 +715,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         metodos.setBackground(new java.awt.Color(117, 117, 117));
         metodos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         metodos.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                metodosMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                metodosMousePressed(evt);
             }
         });
 
@@ -736,8 +736,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         edo.setBackground(new java.awt.Color(117, 117, 117));
         edo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         edo.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                edoMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                edoMousePressed(evt);
             }
         });
 
@@ -757,8 +757,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         ingles1.setBackground(new java.awt.Color(117, 117, 117));
         ingles1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         ingles1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ingles1MouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                ingles1MousePressed(evt);
             }
         });
 
@@ -779,8 +779,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         electro.setBackground(new java.awt.Color(117, 117, 117));
         electro.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         electro.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                electroMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                electroMousePressed(evt);
             }
         });
 
@@ -800,8 +800,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         comunicacionEfc.setBackground(new java.awt.Color(117, 117, 117));
         comunicacionEfc.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         comunicacionEfc.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                comunicacionEfcMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                comunicacionEfcMousePressed(evt);
             }
         });
 
@@ -821,8 +821,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         ingesis.setBackground(new java.awt.Color(117, 117, 117));
         ingesis.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         ingesis.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ingesisMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                ingesisMousePressed(evt);
             }
         });
 
@@ -842,8 +842,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         evalucion.setBackground(new java.awt.Color(117, 117, 117));
         evalucion.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         evalucion.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                evalucionMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                evalucionMousePressed(evt);
             }
         });
 
@@ -863,8 +863,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         sistemasOper.setBackground(new java.awt.Color(117, 117, 117));
         sistemasOper.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         sistemasOper.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                sistemasOperMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                sistemasOperMousePressed(evt);
             }
         });
 
@@ -885,8 +885,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         proyec.setBackground(new java.awt.Color(117, 117, 117));
         proyec.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         proyec.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                proyecMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                proyecMousePressed(evt);
             }
         });
 
@@ -906,8 +906,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         titu.setBackground(new java.awt.Color(117, 117, 117));
         titu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         titu.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tituMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                tituMousePressed(evt);
             }
         });
 
@@ -928,8 +928,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         top1.setBackground(new java.awt.Color(117, 117, 117));
         top1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         top1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                top1MouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                top1MousePressed(evt);
             }
         });
 
@@ -949,8 +949,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         top2.setBackground(new java.awt.Color(117, 117, 117));
         top2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         top2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                top2MouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                top2MousePressed(evt);
             }
         });
 
@@ -970,8 +970,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         edecu.setBackground(new java.awt.Color(117, 117, 117));
         edecu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         edecu.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                edecuMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                edecuMousePressed(evt);
             }
         });
 
@@ -992,8 +992,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         fundeco.setBackground(new java.awt.Color(117, 117, 117));
         fundeco.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         fundeco.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                fundecoMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                fundecoMousePressed(evt);
             }
         });
 
@@ -1013,8 +1013,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         basedatos.setBackground(new java.awt.Color(117, 117, 117));
         basedatos.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         basedatos.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                basedatosMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                basedatosMousePressed(evt);
             }
         });
 
@@ -1034,8 +1034,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         tallerbase.setBackground(new java.awt.Color(117, 117, 117));
         tallerbase.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tallerbase.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tallerbaseMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                tallerbaseMousePressed(evt);
             }
         });
 
@@ -1055,8 +1055,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         orga.setBackground(new java.awt.Color(117, 117, 117));
         orga.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         orga.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                orgaMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                orgaMousePressed(evt);
             }
         });
 
@@ -1076,8 +1076,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         adminProyec.setBackground(new java.awt.Color(117, 117, 117));
         adminProyec.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         adminProyec.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                adminProyecMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                adminProyecMousePressed(evt);
             }
         });
 
@@ -1097,8 +1097,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         paradigmas.setBackground(new java.awt.Color(117, 117, 117));
         paradigmas.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         paradigmas.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                paradigmasMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                paradigmasMousePressed(evt);
             }
         });
 
@@ -1119,8 +1119,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         fundaIngSoft.setBackground(new java.awt.Color(117, 117, 117));
         fundaIngSoft.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         fundaIngSoft.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                fundaIngSoftMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                fundaIngSoftMousePressed(evt);
             }
         });
 
@@ -1141,8 +1141,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         tecnias.setBackground(new java.awt.Color(117, 117, 117));
         tecnias.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tecnias.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tecniasMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                tecniasMousePressed(evt);
             }
         });
 
@@ -1162,8 +1162,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         top3.setBackground(new java.awt.Color(117, 117, 117));
         top3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         top3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                top3MouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                top3MousePressed(evt);
             }
         });
 
@@ -1183,8 +1183,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         eda.setBackground(new java.awt.Color(117, 117, 117));
         eda.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         eda.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                edaMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                edaMousePressed(evt);
             }
         });
 
@@ -1204,8 +1204,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         inso.setBackground(new java.awt.Color(117, 117, 117));
         inso.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         inso.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                insoMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                insoMousePressed(evt);
             }
         });
 
@@ -1229,8 +1229,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         redes.setBackground(new java.awt.Color(117, 117, 117));
         redes.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         redes.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                redesMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                redesMousePressed(evt);
             }
         });
 
@@ -1251,8 +1251,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         semina.setBackground(new java.awt.Color(117, 117, 117));
         semina.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         semina.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                seminaMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                seminaMousePressed(evt);
             }
         });
 
@@ -1273,8 +1273,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         ingles2.setBackground(new java.awt.Color(117, 117, 117));
         ingles2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         ingles2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ingles2MouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                ingles2MousePressed(evt);
             }
         });
 
@@ -1295,8 +1295,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         sia.setBackground(new java.awt.Color(117, 117, 117));
         sia.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         sia.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                siaMouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                siaMousePressed(evt);
             }
         });
 
@@ -1316,8 +1316,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         ingles3.setBackground(new java.awt.Color(117, 117, 117));
         ingles3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         ingles3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ingles3MouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                ingles3MousePressed(evt);
             }
         });
 
@@ -1338,8 +1338,8 @@ public class mallaInterScreen extends javax.swing.JFrame {
         ingles4.setBackground(new java.awt.Color(117, 117, 117));
         ingles4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         ingles4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ingles4MouseClicked(evt);
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                ingles4MousePressed(evt);
             }
         });
 
@@ -1605,7 +1605,7 @@ public class mallaInterScreen extends javax.swing.JFrame {
         
         if(allRequisitosAprobados && !curso.getEstado().equals("A")){
             curso.setEstado("D");
-        }else if(!allRequisitosAprobados && !curso.getEstado().equals("A")){
+        }else if(!allRequisitosAprobados && !curso.getEstado().equals("B")){
             curso.setEstado("B");
         }
     }
@@ -1655,178 +1655,185 @@ public class mallaInterScreen extends javax.swing.JFrame {
         }
     }
     
-    private void cal1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cal1MouseClicked
+    
+
+                            
+
+    
+    
+    private void cal1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cal1MousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Calculo 1"));
-    }//GEN-LAST:event_cal1MouseClicked
+    }//GEN-LAST:event_cal1MousePressed
 
-    private void alg1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alg1MouseClicked
+    private void alg1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alg1MousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Algebra 1"));
-    }//GEN-LAST:event_alg1MouseClicked
+    }//GEN-LAST:event_alg1MousePressed
 
-    private void fis1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fis1MouseClicked
+    private void fis1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fis1MousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Fisica 1"));
-    }//GEN-LAST:event_fis1MouseClicked
+    }//GEN-LAST:event_fis1MousePressed
 
-    private void tallDesPerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tallDesPerMouseClicked
+    private void tallDesPerMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tallDesPerMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Taller desarrollo personal"));
-    }//GEN-LAST:event_tallDesPerMouseClicked
+    }//GEN-LAST:event_tallDesPerMousePressed
 
-    private void introIngMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_introIngMouseClicked
+    private void introIngMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_introIngMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Introduccion a la ingenieria"));
-    }//GEN-LAST:event_introIngMouseClicked
+    }//GEN-LAST:event_introIngMousePressed
 
-    private void metEstudMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metEstudMouseClicked
+    private void metEstudMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metEstudMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Metodos de estudio"));
-    }//GEN-LAST:event_metEstudMouseClicked
+    }//GEN-LAST:event_metEstudMousePressed
 
-    private void cal2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cal2MouseClicked
+    private void cal2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cal2MousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Calculo 2"));
-    }//GEN-LAST:event_cal2MouseClicked
+    }//GEN-LAST:event_cal2MousePressed
 
-    private void alg2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alg2MouseClicked
-        interaccionJPanelConAsignatura(getAsignaturaByName("Algebra 2"));
-    }//GEN-LAST:event_alg2MouseClicked
-
-    private void fis2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fis2MouseClicked
+    private void fis2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fis2MousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Fisica 2"));
-    }//GEN-LAST:event_fis2MouseClicked
+    }//GEN-LAST:event_fis2MousePressed
 
-    private void fundaPrograMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundaPrograMouseClicked
+    private void alg2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alg2MousePressed
+        interaccionJPanelConAsignatura(getAsignaturaByName("Algebra 2"));
+    }//GEN-LAST:event_alg2MousePressed
+
+    private void fundaPrograMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundaPrograMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Fundamentos de programacion"));
-    }//GEN-LAST:event_fundaPrograMouseClicked
+    }//GEN-LAST:event_fundaPrograMousePressed
 
-    private void quimicaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quimicaMouseClicked
+    private void quimicaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quimicaMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Quimica"));
-    }//GEN-LAST:event_quimicaMouseClicked
+    }//GEN-LAST:event_quimicaMousePressed
 
-    private void introIngInforMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_introIngInforMouseClicked
+    private void introIngInforMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_introIngInforMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Introduccion ingenieria informatica"));
-    }//GEN-LAST:event_introIngInforMouseClicked
+    }//GEN-LAST:event_introIngInforMousePressed
 
-    private void electroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_electroMouseClicked
+    private void electroMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_electroMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Electro"));
-    }//GEN-LAST:event_electroMouseClicked
+    }//GEN-LAST:event_electroMousePressed
 
-    private void comunicacionEfcMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_comunicacionEfcMouseClicked
+    private void comunicacionEfcMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_comunicacionEfcMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Comunicacion efectiva"));
-    }//GEN-LAST:event_comunicacionEfcMouseClicked
+    }//GEN-LAST:event_comunicacionEfcMousePressed
 
-    private void edoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edoMouseClicked
-        interaccionJPanelConAsignatura(getAsignaturaByName("Ecuaciones diferenciales"));
-    }//GEN-LAST:event_edoMouseClicked
-
-    private void ingles1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles1MouseClicked
+    private void ingles1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles1MousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Ingles 1"));
-    }//GEN-LAST:event_ingles1MouseClicked
+    }//GEN-LAST:event_ingles1MousePressed
 
-    private void metodosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metodosMouseClicked
+    private void edoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edoMousePressed
+        interaccionJPanelConAsignatura(getAsignaturaByName("Ecuaciones diferenciales"));
+    }//GEN-LAST:event_edoMousePressed
+
+    private void metodosMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metodosMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Metodos de programacion"));
-    }//GEN-LAST:event_metodosMouseClicked
+    }//GEN-LAST:event_metodosMousePressed
 
-    private void estadisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_estadisMouseClicked
+    private void estadisMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_estadisMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Analisis estadistico"));
-    }//GEN-LAST:event_estadisMouseClicked
+    }//GEN-LAST:event_estadisMousePressed
 
-    private void ingesisMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingesisMouseClicked
+    private void ingesisMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingesisMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Ingenieria de sistemas"));
-    }//GEN-LAST:event_ingesisMouseClicked
+    }//GEN-LAST:event_ingesisMousePressed
 
-    private void fundecoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundecoMouseClicked
+    private void fundecoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundecoMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Fundamentos de economia"));
-    }//GEN-LAST:event_fundecoMouseClicked
+    }//GEN-LAST:event_fundecoMousePressed
 
-    private void edecuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edecuMouseClicked
+    private void edecuMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edecuMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Estructura de computadores"));
-    }//GEN-LAST:event_edecuMouseClicked
+    }//GEN-LAST:event_edecuMousePressed
 
-    private void paradigmasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_paradigmasMouseClicked
+    private void paradigmasMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_paradigmasMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Paradigmas de programacion"));
-    }//GEN-LAST:event_paradigmasMouseClicked
+    }//GEN-LAST:event_paradigmasMousePressed
 
-    private void edaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edaMouseClicked
+    private void edaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_edaMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Analisis de algoritmos y estructura de datos"));
-    }//GEN-LAST:event_edaMouseClicked
+    }//GEN-LAST:event_edaMousePressed
 
-    private void ingles2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles2MouseClicked
+    private void ingles2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles2MousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Ingles 2"));
-    }//GEN-LAST:event_ingles2MouseClicked
+    }//GEN-LAST:event_ingles2MousePressed
 
-    private void evalucionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_evalucionMouseClicked
+    private void evalucionMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_evalucionMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Evaluacion de proyectos informaticos"));
-    }//GEN-LAST:event_evalucionMouseClicked
+    }//GEN-LAST:event_evalucionMousePressed
 
-    private void basedatosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_basedatosMouseClicked
+    private void basedatosMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_basedatosMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Disenio base de datos"));
-    }//GEN-LAST:event_basedatosMouseClicked
+    }//GEN-LAST:event_basedatosMousePressed
 
-    private void orgaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orgaMouseClicked
+    private void orgaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_orgaMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Organizacion de computadores"));
-    }//GEN-LAST:event_orgaMouseClicked
+    }//GEN-LAST:event_orgaMousePressed
 
-    private void insoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_insoMouseClicked
-        interaccionJPanelConAsignatura(getAsignaturaByName("Informatica y sociedad"));
-    }//GEN-LAST:event_insoMouseClicked
-
-    private void siaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siaMouseClicked
-        interaccionJPanelConAsignatura(getAsignaturaByName("Sistemas de informacion"));
-    }//GEN-LAST:event_siaMouseClicked
-
-    private void ingles3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles3MouseClicked
-        interaccionJPanelConAsignatura(getAsignaturaByName("Ingles 3"));
-    }//GEN-LAST:event_ingles3MouseClicked
-
-    private void fundaIngSoftMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundaIngSoftMouseClicked
+    private void fundaIngSoftMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_fundaIngSoftMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Fundamentos de ingenieria de software"));
-    }//GEN-LAST:event_fundaIngSoftMouseClicked
+    }//GEN-LAST:event_fundaIngSoftMousePressed
 
-    private void ingles4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles4MouseClicked
+    private void insoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_insoMousePressed
+        interaccionJPanelConAsignatura(getAsignaturaByName("Informatica y sociedad"));
+    }//GEN-LAST:event_insoMousePressed
+
+    private void siaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siaMousePressed
+        interaccionJPanelConAsignatura(getAsignaturaByName("Sistemas de informacion"));
+    }//GEN-LAST:event_siaMousePressed
+
+    private void ingles3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles3MousePressed
+        interaccionJPanelConAsignatura(getAsignaturaByName("Ingles 3"));
+    }//GEN-LAST:event_ingles3MousePressed
+
+    private void ingles4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ingles4MousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Ingles 4"));
-    }//GEN-LAST:event_ingles4MouseClicked
+    }//GEN-LAST:event_ingles4MousePressed
 
-    private void redesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_redesMouseClicked
+    private void redesMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_redesMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Redes computacionales"));
-    }//GEN-LAST:event_redesMouseClicked
+    }//GEN-LAST:event_redesMousePressed
 
-    private void tecniasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tecniasMouseClicked
+    private void tecniasMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tecniasMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Tecnicas de ingenieria de software"));
-    }//GEN-LAST:event_tecniasMouseClicked
+    }//GEN-LAST:event_tecniasMousePressed
 
-    private void adminProyecMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adminProyecMouseClicked
+    private void adminProyecMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_adminProyecMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Administracion de proyectos informaticos"));
-    }//GEN-LAST:event_adminProyecMouseClicked
+    }//GEN-LAST:event_adminProyecMousePressed
 
-    private void tallerbaseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tallerbaseMouseClicked
+    private void tallerbaseMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tallerbaseMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Taller base de datos"));
-    }//GEN-LAST:event_tallerbaseMouseClicked
+    }//GEN-LAST:event_tallerbaseMousePressed
 
-    private void sistemasOperMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sistemasOperMouseClicked
+    private void sistemasOperMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sistemasOperMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Sistemas operativos"));
-    }//GEN-LAST:event_sistemasOperMouseClicked
+    }//GEN-LAST:event_sistemasOperMousePressed
 
-    private void proyecMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_proyecMouseClicked
+    private void proyecMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_proyecMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Proyecto de ingenieria de software"));
-    }//GEN-LAST:event_proyecMouseClicked
+    }//GEN-LAST:event_proyecMousePressed
 
-    private void top1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top1MouseClicked
-        interaccionJPanelConAsignatura(getAsignaturaByName("Topicos 1"));
-    }//GEN-LAST:event_top1MouseClicked
-
-    private void top2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top2MouseClicked
-        interaccionJPanelConAsignatura(getAsignaturaByName("Topicos 2"));
-    }//GEN-LAST:event_top2MouseClicked
-
-    private void top3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top3MouseClicked
-        interaccionJPanelConAsignatura(getAsignaturaByName("Topicos 3"));
-    }//GEN-LAST:event_top3MouseClicked
-
-    private void seminaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seminaMouseClicked
-        interaccionJPanelConAsignatura(getAsignaturaByName("Seminario de computacion e informatica"));
-    }//GEN-LAST:event_seminaMouseClicked
-
-    private void tituMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tituMouseClicked
+    private void tituMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tituMousePressed
         interaccionJPanelConAsignatura(getAsignaturaByName("Trabajo de titulacion"));
-    }//GEN-LAST:event_tituMouseClicked
+    }//GEN-LAST:event_tituMousePressed
 
+    private void top1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top1MousePressed
+        interaccionJPanelConAsignatura(getAsignaturaByName("Topicos 1"));
+    }//GEN-LAST:event_top1MousePressed
+
+    private void top2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top2MousePressed
+        interaccionJPanelConAsignatura(getAsignaturaByName("Topicos 2"));
+    }//GEN-LAST:event_top2MousePressed
+
+    private void top3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top3MousePressed
+        interaccionJPanelConAsignatura(getAsignaturaByName("Topicos 3"));
+    }//GEN-LAST:event_top3MousePressed
+
+    private void seminaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seminaMousePressed
+        interaccionJPanelConAsignatura(getAsignaturaByName("Seminario de computacion e informatica"));
+    }//GEN-LAST:event_seminaMousePressed
+
+    
     /**
      * @param args the command line arguments
      */
