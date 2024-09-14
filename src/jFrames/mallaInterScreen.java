@@ -29,6 +29,7 @@ public class mallaInterScreen extends javax.swing.JFrame {
      */
     public mallaInterScreen() {
         initComponents();
+        this.setTitle("Malla Simulada");
         
         //Codigo imperativo para datos de las asignaturas
         Asignatura calculo1 = new Asignatura("Calculo 1","D",cal1);

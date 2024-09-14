@@ -23,6 +23,7 @@ public class verMallaScreen extends javax.swing.JFrame {
      */
     public verMallaScreen() {
         initComponents();
+        this.setTitle("Ver Malla");
     }
 
     /**
