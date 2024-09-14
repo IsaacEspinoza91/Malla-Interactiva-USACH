@@ -67,6 +67,7 @@ public class mainScreen extends javax.swing.JFrame {
         btMallaInter.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
         btMallaInter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/exam32.png"))); // NOI18N
         btMallaInter.setText("<html><center>Malla Simulada");
+        btMallaInter.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btMallaInter.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btMallaInter.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btMallaInter.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -87,6 +88,7 @@ public class mainScreen extends javax.swing.JFrame {
         btVerMalla.setFont(new java.awt.Font("Arial", 3, 14)); // NOI18N
         btVerMalla.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/calendar32.png"))); // NOI18N
         btVerMalla.setText("Ver Malla");
+        btVerMalla.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btVerMalla.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btVerMalla.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btVerMalla.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -106,6 +108,7 @@ public class mainScreen extends javax.swing.JFrame {
         jLabel3.setText("By Isaac Cumbia Espinoza");
 
         btSalir.setBackground(new java.awt.Color(117, 117, 117));
+        btSalir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btSalir.setPreferredSize(new java.awt.Dimension(73, 23));
         btSalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
