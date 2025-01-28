@@ -441,7 +441,8 @@ public class verMallaScreen extends javax.swing.JFrame {
         });
 
         jLabel24.setForeground(new java.awt.Color(242, 242, 242));
-        jLabel24.setText("<html><center>Métodos de Estudio");
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel24.setText("Métodos de Estudio");
 
         javax.swing.GroupLayout metEstudLayout = new javax.swing.GroupLayout(metEstud);
         metEstud.setLayout(metEstudLayout);
@@ -1895,18 +1896,17 @@ public class verMallaScreen extends javax.swing.JFrame {
         proyec.setBackground(COLORASIGACTUAL);
         tallerbase.setBackground(COLORASIGREQUI);
         tecnias.setBackground(COLORASIGREQUI);
+        adminProyec.setBackground(COLORASIGREQUI);
     }//GEN-LAST:event_proyecMouseEntered
 
     private void top1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top1MouseEntered
         top1.setBackground(COLORASIGACTUAL);
-        adminProyec.setBackground(COLORASIGREQUI);
         tecnias.setBackground(COLORASIGREQUI);
         redes.setBackground(COLORASIGREQUI);
     }//GEN-LAST:event_top1MouseEntered
 
     private void top2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_top2MouseEntered
         top2.setBackground(COLORASIGACTUAL);
-        adminProyec.setBackground(COLORASIGREQUI);
         tecnias.setBackground(COLORASIGREQUI);
         redes.setBackground(COLORASIGREQUI);
     }//GEN-LAST:event_top2MouseEntered
